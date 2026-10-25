@@ -1,0 +1,3 @@
+{"title":"ATPL Viva","topics":[{"id":"sample","title":"Sample topic (replace with PDF content)",
+"notes":["**Lift** is produced when airflow is deflected by the wing.\nL = ½ρV²·S·CL","**Stall** occurs at the critical angle of attack, not at a particular speed."],
+"cards":[{"q":"What does a stall depend on?","a":"**Angle of attack** exceeding the critical angle (~15–16°), not airspeed."},{"q":"Lift formula?","a":"L = ½ρV²·S·CL"}]}]}
