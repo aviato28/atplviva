@@ -2,7 +2,7 @@ const $=s=>document.querySelector(s),app=$('#app'),back=$('#back'),titleEl=$('#t
 let D,P=JSON.parse(localStorage.getItem('p')||'{}'),stack=[];
 const save=()=>localStorage.setItem('p',JSON.stringify(P));
 const esc=t=>String(t).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
-const box=(t,i)=>P[t+':'+i]||0, mastered=(t,i)=>box(t,i)>=3;
+const box=(t,i)=>P[t+':'+i]||0, mastered=(t,i)=>box(t,i)>=2;
 const allCards=()=>D.topics.flatMap(t=>t.cards.map((c,i)=>({...c,t:t.id,i})));
 const weakList=()=>allCards().filter(c=>P['w:'+c.t+':'+c.i]);
 const PRAISE=['Nice!','Locked in 🔒','Examiner impressed','Solid','Boom 💥','That\'s a keeper'];
@@ -35,18 +35,20 @@ function learn(t,k=0){
   $('#n').onclick=()=>k<t.notes.length-1?learn(t,k+1):go(()=>cards(t.cards.map((c,i)=>({...c,t:t.id,i})),false,'Say the answer out loud before revealing.'),t.title+' · Cards');
   scrollTo(0,0);
 }
-function cards(list,shuffle,hint){
-  let q=list.filter(c=>!mastered(c.t,c.i));
-  if(!q.length){app.innerHTML=`<div class="card">🎉 All cards in this set mastered.</div><button class="btn alt" id="r">Review everything anyway</button>`;
+const MAST=2;
+function cards(list,shuffle,hint,q){
+  if(!q){q=list.filter(c=>!mastered(c.t,c.i));if(shuffle)q.sort(()=>Math.random()-.5);}
+  if(!q.length){app.innerHTML=`<div class="card">🎉 Set complete - everything here is mastered.</div><button class="btn alt" id="r">Review everything again</button>`;
     $('#r').onclick=()=>{list.forEach(c=>{delete P[c.t+':'+c.i];delete P['w:'+c.t+':'+c.i]});save();cards(list,shuffle,hint)};return}
-  if(shuffle)q.sort(()=>Math.random()-.5);
-  const c=q[0];
-  app.innerHTML=`<p class="mut">${q.length} left · box ${box(c.t,c.i)}/3</p><div class="card q">${esc(c.q)}</div>${hint?`<p class="mut">${hint}</p>`:''}<div id="ans"></div><button class="btn alt" id="show">Show answer</button>`;
+  const c=q[0],k=c.t+':'+c.i;
+  app.innerHTML=`<p class="mut">${q.length} left in this round</p><div class="card q">${esc(c.q)}</div>${hint?`<p class="mut">${hint}</p>`:''}<div id="ans"></div><button class="btn alt" id="show">Show answer</button>`;
   $('#show').onclick=()=>{
     $('#ans').innerHTML=`<div class="card a">${esc(c.a)}</div>`+(c.tip?`<div class="card tip">💡 ${esc(c.tip)}</div>`:'');
     $('#show').outerHTML=`<div class="row"><button class="btn bad" id="no">Again</button><button class="btn ok" id="yes">Got it</button></div>`;
-    $('#no').onclick=()=>{P[c.t+':'+c.i]=0;P['w:'+c.t+':'+c.i]=1;save();cards(list,shuffle,hint)};
-    $('#yes').onclick=()=>{P[c.t+':'+c.i]=box(c.t,c.i)+1;delete P['w:'+c.t+':'+c.i];save();toast(PRAISE[Math.random()*PRAISE.length|0]);cards(list,shuffle,hint)};
+    const rest=q.slice(1);
+    $('#no').onclick=()=>{P[k]=0;P['w:'+k]=1;save();rest.splice(Math.min(3,rest.length),0,c);cards(list,shuffle,hint,rest)};
+    $('#yes').onclick=()=>{P[k]=box(c.t,c.i)+1;delete P['w:'+k];save();toast(PRAISE[Math.random()*PRAISE.length|0]);
+      if(!mastered(c.t,c.i))rest.splice(Math.min(8,rest.length),0,c);cards(list,shuffle,hint,rest)};
   };
   scrollTo(0,0);
 }
