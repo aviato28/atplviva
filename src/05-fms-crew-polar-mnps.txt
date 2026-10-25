@@ -1,0 +1,120 @@
+# 14. FMS
+== What's inside
+The FMC holds two databases:
+- **Performance database**: all the aircraft's performance parameters + the company's **cost index** strategy.
+- **Navigation database**: aeronautical info for the planned area of operations. Updated every **28 days** (AIRAC cycle); the FMC stores the **current AND next 28-day** databases.
+== How the position is built
+**Twin IRS, twin FMC**: left FMC <- left IRS, right FMC <- right IRS. The FMC *must* have an external reference to get the right position.
+**Triple IRS, twin FMC**: data from all three IRS is compared for gross errors, then **averaged**. The result is compared with an external reference. FMC uses **Kalman filtering** to give position and velocity.
+**Kalman filtering** = combining the **short-term accuracy of the IRS** with the **long-term accuracy of the external reference** (DME/DME, GNSS...).
+Q: What databases does the FMC hold?
+A: A performance database (aircraft performance parameters and company cost index strategy) and a navigation database (aeronautical info for the planned area, updated every 28 days, holding current and next cycle).
+Q: What is Kalman filtering?
+A: A process in the navigation computer that combines the short-term accuracy of the IRS with the long-term accuracy of an external reference to produce position and velocity.
+Q: How does a triple-IRS/twin-FMC system work?
+A: IRS positions and headings are compared for gross errors, averaged, then compared against an external reference; Kalman filtering produces the final position and velocity.
+QN: How often is the nav database updated?
+A: Every 28 days; FMC stores current and next 28-day databases.
+
+# 15. Minimum Flight Crew
+== When you need two pilots
+1. Never less than specified in the approved **AFM / Ops Manual / CofA**.
+2. All aeroplanes above **1500 kg** in scheduled/non-scheduled air transport: **at least two pilots**.
+3. All State Govt / VVIP / VIP aircraft: two pilots.
+4. Aircraft above **5700 kg**: two pilots.
+5. Flight calibration, aerial survey, remote sensing: two pilots.
+6. Seating capacity of **10 or more** (excluding pilot seats): two pilots.
+== Single pilot IFR - ALL must be true
+1. Flight manual doesn't require more than one crew.
+2. **Propeller-driven**.
+3. Max approved pax seating **not more than 9**.
+4. MTOM **not above 5700 kg**.
+5. **Approved by DGCA**.
+Plus: at least **100 hours PIC** on the type and model.
+T: "1-P-9-5700-DGCA": One crew, Prop, 9 seats, 5700 kg, DGCA.
+Q: When must an aircraft be flown by at least two pilots?
+A: Per AFM/OM/CofA; air transport aeroplanes above 1500 kg; State/VVIP/VIP aircraft; aircraft above 5700 kg; flight calibration/aerial survey/remote sensing; seating capacity of 10 or more excluding pilot seats.
+QN: Conditions for single-pilot IFR?
+A: Flight manual needs only one crew; propeller-driven; max 9 pax seats; MTOM not over 5700 kg; DGCA approval; and PIC has at least 100 hours on type/model.
+
+# 16. Long Range & Polar Navigation
+== Why the poles are hard
+Two killers: **convergency** (true direction changes rapidly) and **magnetic variation** (close to magnetic poles, changes fast + steep dip). The compass becomes unreliable -> **fly gyro heading**.
+Polar tracks = N/S routes above **65N**. Other issues: limited comms (**HF only**), few **en-route alternates**, and high gyro correction rates (earth rate and transport wander).
+== The solution: Grid Navigation
+Only practical method in polar regions. The chart is overlaid with a **grid** of lines referencing **gyro north**. While gyro steering is used, the **magnetic element of the gyro magnetic compass is disconnected**. Also INS/IRS and GPS. Near the North Magnetic Pole, **VOR beacons are oriented to true north** to help.
+== Cross-checking INS when in doubt
+- **3 sets**: voting system - one bad system is detected quickly.
+- **2 sets**: a failure isn't easily seen unless a **malfunction code** shows which unit. Get a fix (weather radar, ADF/NDB bearings, VOR) and compare.
+- Still unsure: ask a nearby aircraft to compare **spot winds, ground speed and drift**. Last resort: compare with flight plan winds at DR position.
+== Unable to follow ATC clearance
+Get a **revised clearance before acting**, when possible. Applies also if you cannot maintain the specified nav accuracy. Use RTF **distress or urgency** as appropriate.
+== Minimum time route
+Shortest-time track between two points obeying ATC/airspace limits. Because of restricted areas, airways, wind and weather, it can be **longer than the great circle** yet quicker.
+Q: How do you navigate to the North Pole?
+A: Compass unreliable (rapid convergency and magnetic variation changes, steep dip). Use grid navigation with gyro heading, INS/IRS and GPS; the magnetic element of the compass is disconnected during gyro steering.
+Q: Problems of polar flight?
+A: Unreliable magnetic compass, HF-only comms, lack of en-route alternates, high gyro correction rates, no ground aids.
+Q: How do you cross-check INS systems?
+A: 3-set voting; 2-set: use malfunction codes and fixes from weather radar/ADF/VOR; then spot winds with other aircraft; last resort compare with flight plan wind at DR position.
+Q: What if you can't follow your ATC clearance?
+A: Obtain a revised clearance before action if possible - by RTF with distress/urgency message as appropriate. Applies also if you can't maintain nav accuracy.
+Q: What is a minimum time route?
+A: Track giving shortest time between two points while obeying ATC and airspace restrictions; may not be the great circle.
+
+# 17. MNPS (North Atlantic)
+== Why MNPS exists: 3 problems
+1. **Traffic density** is abnormally high with a tidal flow of traffic.
+2. **Jet streams** (polar front ~55N, subtropical ~40N) always flow **west to east**.
+3. **No ground nav aids**, so accuracy is lower than over land and ATC must allow bigger separations.
+Ocean problems: no aerodromes, no radar, no VOR/NDB, out of VHF range -> HF.
+== The airspace
+**MNPS = Minimum Navigation Performance Specification**, covering NAT airspace between **35N and 70N**. All traffic is IFR; airspace is **Class A from FL55 to FL660** (OCA). There are **5 NAT OCAs**.
+Approval shown on the flight plan with the letters **SX** in Item 10 of the flight plan.
+MNPS airspace: **FL285-420**, incorporating **RVSM FL290-410**. Aircraft must also be RVSM approved and meet altimetry **MASPS**.
+During the **Organised Track System (OTS)** all FLs are available in both directions (tidal flow).
+== RVSM minimum equipment (NAT)
+1. Two independent barometric altimeters agreeing within **+/-200 ft**.
+2. Autopilot with **height hold**.
+3. Altitude deviation alert at **+/-300 ft**.
+4. SSR with Mode C.
+5. Altimeters checked before entering NAT OCA.
+6. Report reaching any new level; report deviations >300 ft to ATS and file a written report post-flight.
+== Nav and other equipment
+Minimum **2 independent LRNS** (GNSS, INS or IRS), each giving continuous position, track and speed and having failure warning. Turbine aeroplanes **MTOM > 5700 kg** need **ACAS II** in NAT.
+== Tracks and comms
+Best routes are **minimum time tracks**; OTS = parallel tracks spaced by MNPS RNP.
+Comms: **HF SSB** primary; long-range VHF within **250 nm of land**; VHF for oceanic clearance delivery.
+Position reporting: ATC is **procedural**. Routes cross whole 5 deg longitudes at whole degrees of latitude (N/S routes: whole 10 deg latitude at whole degrees longitude) -> reports at intervals **not greater than 1 hour**.
+**Oceanic clearance** must be obtained **at least 40 minutes before** entering NAT airspace (above FL55) from the initial OACC.
+== NAT radio failure
+Maintain the **last received and acknowledged oceanic clearance, level and speed** to the last specified oceanic route point (normally landfall). Then:
+1. Cleared on filed route -> continue on filed route, then follow state procedures.
+2. Cleared other than filed route -> after that point follow state procedures and rejoin the filed route.
+== SLOP in NAT (wake turbulence)
+Three options: fly the **centreline**, **offset 1 NM right**, or **offset 2 NM right** (right only).
+== Weather deviation
+Request a revised clearance. If you can't, contingency:
+a) deviate away from the track/OTS if possible; b) broadcast aircraft ID, FL, position and intentions on frequency in use and **121.5 MHz**; c) watch traffic visually and on ACAS/TCAS; d) turn **on all exterior lights**; e) deviation **<10 NM**: stay at assigned level; f) deviation **>10 NM**: when about 10 NM off track, change level **+/-300 ft**.
+== Unable to get revised clearance
+Turn at least **45 deg** left or right. Acquire a track **15 NM** laterally from assigned route. Level change: above FL410 climb/descend **1000 ft**; below FL410 **500 ft**; at FL410 climb **1000 ft** or descend **500 ft**.
+Q: What is MNPS and why exists?
+A: Minimum Navigation Performance Specification airspace over the North Atlantic (35N-70N). Needed due to high traffic density with tidal flow, west-east jet streams, and absence of ground navaids.
+Q: Describe the NAT OCA airspace.
+A: All IFR, Class A between FL55 and FL660; five NAT OCAs. MNPS airspace FL285-420, including RVSM FL290-410.
+QN: Minimum RVSM equipment for NAT flight?
+A: Two altimeters agreeing within 200 ft; autopilot with height hold; altitude alerting at 300 ft; Mode C; altimeters checked before entry; report new levels and deviations >300 ft.
+Q: Navigation system requirements for MNPS?
+A: At least two independent LRNS (GNSS/INS/IRS) each with failure warning and continuous position, track and speed; ACAS II for turbine aeroplanes over 5700 kg.
+QN: How early must you get oceanic clearance?
+A: At least 40 minutes before entering NAT airspace above FL55, from the initial OACC.
+Q: Radio failure in NAT?
+A: Maintain last acknowledged oceanic clearance (route, level, speed) to the last specified oceanic route point; then continue filed route (if cleared on it) or rejoin filed route (if cleared otherwise) per state procedures.
+QN: SLOP in NAT?
+A: Wake turbulence option: centreline, 1 NM right, or 2 NM right offset.
+Q: Deviation around weather without clearance?
+A: Move away from OTS if possible; broadcast ID/FL/position/intentions on frequency and 121.5; watch traffic with eyes and ACAS; all exterior lights on; if <10 NM stay at level; if >10 NM, at about 10 NM off track change level +/-300 ft.
+QN: If you can't get a revised clearance?
+A: Turn at least 45 deg; get 15 NM lateral offset; above FL410 change 1000 ft, below FL410 change 500 ft, at FL410 climb 1000 or descend 500 ft.
+Q: How is position reported over the NAT?
+A: Procedural ATC; routes cross whole 5 deg longitudes at whole latitudes (N/S routes: 10 deg latitude at whole longitudes) so reports are at most 1 hour apart.

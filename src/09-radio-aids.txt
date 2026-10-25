@@ -1,0 +1,143 @@
+# 31. ILS
+== What is it?
+A precision runway approach aid using **two radio beams** giving horizontal AND vertical guidance. Three ground parts:
+- **Localiser (LLZ)**: **VHF**, about **300 m beyond** the upwind (far) end of the runway.
+- **Glide path (GP)**: **UHF**, frequency-paired with the localiser; located ~300 m in from threshold and ~200 m off the runway edge, abeam the touchdown point.
+- **Marker beacons**: all **75 MHz**: outer, middle, possibly inner marker. They let you cross-check height vs range/timing.
+== Frequencies
+Localiser **108.0-111.975 MHz** (odd first decimal digit). Glidepath **329.15-335 MHz**. Markers **75 MHz**.
+**DME paired with ILS**: supplements or replaces markers; zero-referenced to the ILS threshold; protected only inside the localiser service area up to **25 000 ft**.
+== Identification
+4-letter Morse at 7 groups/min; first letter usually **I**. Suppressed if the ILS is unserviceable or withdrawn; removed or replaced by continuous tone during maintenance/test.
+== How it works
+The localiser makes **two overlapping lobes** on a single VHF frequency, modulated differently (90 Hz and 150 Hz). Modulation depth increases away from centreline. **DDM = 0** is the centreline.
+**False glideslopes**: other paths in the vertical plane with DDM zero; caused by metallic structures at the transmitter, ground reflections, aerial height. First false glideslope at about **twice the glide path angle (6 deg for a 3 deg GP)**; always **above** the true glide path, so not dangerous.
+**ILS reference datum**: point ~**50 ft** above the intersection of centreline and threshold through which the glidepath passes. PAPI gives visual glidepath matching the ILS, designed for mean eye height of pilot (MEHT).
+== Sensitivity
+Localiser full-scale deflection: **2.5 deg** each side = **0.5 deg per dot**.
+Glide path full-scale: **0.7 deg** = **0.14 deg per dot**. Max safe deviation below glideslope: half-scale = **2.5 dots fly up** (the EGPWS mode 5B hard alert).
+Q: What are the components of ILS and their bands?
+A: Localiser (VHF, 108-111.975 MHz, ~300 m beyond upwind end), glide path (UHF, 329.15-335 MHz, ~300 m in from threshold and 200 m offset), markers (75 MHz).
+Q: How do you know a localiser frequency?
+A: 108.0-111.975 MHz with an ODD first decimal digit (e.g. 109.1).
+Q: How does the localiser work?
+A: Two overlapping lobes on one VHF frequency, modulated differently; modulation depth rises away from the centreline; DDM zero = centreline.
+Q: What are false glideslopes?
+A: Additional paths with zero DDM due to reflections/structures; first at about twice the GP angle (6 deg for 3 deg); always above the true GP so not dangerous.
+QN: ILS sensitivity?
+A: Localiser: full scale 2.5 deg, 0.5 deg per dot. Glide path: full scale 0.7 deg, 0.14 deg per dot. Max safe low deviation 2.5 dots (fly up).
+Q: ILS identification?
+A: 4-letter Morse at 7 groups/min starting with I; suppressed if unserviceable; removed or continuous tone during maintenance.
+Q: What is the ILS reference datum?
+A: A point about 50 ft above the intersection of runway centreline and threshold through which the extended glidepath passes.
+Q: Significance of ILS X, Y, Z?
+A: Per ICAO Doc 8168, a suffix starting with Z is used when two or more procedures to the same runway cannot be distinguished by navaid type alone.
+
+# 32. VOR
+== Basics
+Produces **360 radials** at 1 deg spacing, aligned to **magnetic north at the VOR site**. Frequency **108-117.95 MHz VHF**. Practically free of static and sky-wave interference, so usable day and night.
+== Principle: phase comparison
+Receiver measures phase difference between two **30 Hz** signals: a **reference** (FM omni-directional) and a **variable** (AM, rotating pattern).
+== Types
+**BVOR**: broadcast VOR (weather/airfield info). **DVOR**: Doppler VOR, overcomes siting errors. **TVOR**: terminal, low power. **VOT**: test facility, broadcasts a fixed 360 deg test signal.
+**DVOR difference**: reference signal is **AM**, variable signal is **FM**, and the directional signal rotates **anti-clockwise** to keep the same phase relationship. Less sensitive to site error.
+== Errors
+1. **Site error** (terrain, buildings, trees, long grass).
+2. **Propagation error** (terrain & distance - scalloping/bends).
+3. **Scalloping**: imperfection in received signal making the CDI shift side to side.
+4. **Airborne equipment error**.
+Total error about **+/-5 deg**, plus pilotage error.
+Airborne VOR parts: aerial, receiver, indicator.
+Q: How does a VOR work?
+A: Phase comparison between a 30 Hz FM omnidirectional reference and a rotating 30 Hz AM variable signal; the phase difference gives the radial.
+Q: Conventional VOR vs DVOR?
+A: Conventional: reference FM, variable AM. DVOR: reference AM, variable FM, rotating anti-clockwise; improves accuracy by being less sensitive to site error.
+Q: Types of VOR?
+A: BVOR (broadcast), DVOR (Doppler), TVOR (terminal), VOT (test, 360 deg).
+Q: VOR errors?
+A: Site, propagation (scalloping), airborne equipment; total about +/-5 deg plus pilotage.
+QN: VOR frequency range?
+A: 108-117.95 MHz VHF.
+
+# 33. Radar, SSR & Mode S
+== Primary vs Secondary
+**Primary**: reflected echo; Tx and Rx same frequency; single pulse; needs high peak power; weather-affected; depends on the target; no external help. Examples: **radio altimeter, GPWS, AWR**.
+**Secondary**: ground interrogates, aircraft transponder replies; different frequencies; pulse pairs; less power; not affected by weather; independent of target reflection. Examples: **SSR, DME, TCAS**.
+Primary gives better range/bearing but cannot identify aircraft individually.
+== Why VHF and above?
+Free from noise/static; short wavelengths give narrow beams, short pulses, and reflect efficiently from objects. Max theoretical range is set by **PRF**.
+== ATC primary radars
+- **ASR**: area surveillance, 200-300 nm. **TAR**: medium range up to 75 nm for TMAs.
+- **Aerodrome surveillance (approach) radar**: up to 25 nm, 3 cm or 10 cm; talk-down ends 2 nm from threshold.
+- **PAR**: military only; 10 GHz (3 cm); azimuth + elevation (electronic glide path); ends at 1/2 nm or less.
+- **ASMR/ASMI**: surface movement radar; 60 rpm, 15-17 GHz (SHF), 1.76-2 cm wavelength, 2.5-6 nm range.
+== Airborne weather radar (AWR)
+Primary radar. Uses the **echo principle** for range and **searchlight principle** for bearing. Frequency about **9375 MHz** (+/-30), best returns from large droplets & wet hail in convective clouds. Uses: weather range/bearing, heaviest precipitation + turbulence, cloud height, ground mapping.
+Colours: **Black** < 0.7 mm/hr; **Green** 0.7-4; **Yellow** 4-12; **Red** > 12 mm/hr; **Magenta** turbulence. Without magenta, red may flash red/black (cyclic).
+Mapping: monochrome AWR, max 150 nm: **cosecant (fan) beam** for mapping to ~70 nm; **pencil beam** beyond.
+Cloud height: tilt up until returns just disappear, then use 1 in 60. **Height ring** on older radars: vertical overspill showing roughly the aircraft's height; also means the equipment works. Height = (tilt - beamwidth/2) x range x 100 ft.
+== SSR
+Ground interrogates on **1030 MHz**, replies **1090 MHz**. **Mode A** = identity, **Mode C** = altitude. Mode S = selective addressing; also used for TCAS.
+Special codes: **7700** emergency, **7600** radio failure, **7500** unlawful interference (hijack), **2000** aircraft with no ATC instructions. Mode C operated with all codes.
+4096 codes in Mode A (octal 4-digit). Problems: **garbling** (overlapping replies from aircraft within ~1.7 nm on the same bearing), **fruiting** (replies triggered by another interrogator).
+**Mode S**: over **16.7 million** unique addresses (fixed to the airframe), data link (air-ground and air-air), fewer voice calls (via CDU), compatible with A & C.
+Q: Primary vs secondary radar?
+A: Primary: echo of own pulse, no cooperation, high power, affected by weather (radalt, GPWS, AWR). Secondary: ground interrogation + transponder reply on different frequencies, pulse pairs, lower power, weather-independent, gives identity/altitude (SSR, DME, TCAS).
+Q: SSR frequencies and modes?
+A: Interrogate 1030 MHz, reply 1090 MHz. Mode A identity, Mode C altitude, Mode S selective addressing/data link.
+QN: Special SSR codes?
+A: 7700 emergency; 7600 radio failure; 7500 unlawful interference; 2000 no ATC instructions received.
+QN: How many SSR codes in Mode A and Mode S?
+A: 4096 in Mode A; over 16.7 million in Mode S.
+Q: Garbling and fruiting?
+A: Garbling: overlapping replies from aircraft on nearly the same bearing within ~1.7 nm. Fruiting: interference at an interrogator from replies triggered by another interrogator.
+Q: AWR colours?
+A: Black <0.7, green 0.7-4, yellow 4-12, red >12 mm/hr, magenta = turbulence.
+Q: How do you find storm cloud height on AWR?
+A: Tilt up until the returns just disappear and use the 1 in 60 rule (height = (tilt - beamwidth/2) x range x 100 ft).
+Q: What's the AWR frequency and why?
+A: About 9375 MHz; best returns from large water droplets and wet hail in convective clouds.
+Q: What is the height ring?
+A: Vertical overspill of beam energy reflected back that appears as a ring showing roughly aircraft height and confirming the radar is serviceable.
+
+# 34. GNSS / GPS & Augmentation
+== The three segments
+**Space** (24 SVs in 6 planes; 21 operational + 3 spares; altitude ~10 898 nm / 20 180 km; period 12 h; inclination 55 deg), **Control**, **User** (receivers).
+Accuracy of the order of tens of metres. NAVSTAR (USA) and GLONASS (Russia).
+Signals: **L1 1575.42 MHz** carries C/A code (repeats every ms), P code and nav message (50 Hz). **L2 1227.6 MHz** carries P code, used to determine **ionospheric delay**. Civilians use only **C/A** code; P is for military/approved users.
+== Errors (95%)
+Ephemeris error (gravity, solar radiation); SV clock error (checked at least every 12 h); **ionospheric propagation error - most significant** (single frequency max ~5 m); tropospheric error (pressure, temperature, humidity, density).
+== Augmentation
+**ABAS**: onboard integrity monitoring, e.g. **RAIM**. Needs **5 satellites** minimum for fault detection (the fifth detects the faulty SV).
+**GBAS** (local area DGPS / LAAS): provides precision approaches by removing ephemeris and clock errors and minimising atmospheric errors; potential for **Cat IIIC**.
+**SBAS** (wide area DGPS / WAAS): US WAAS operational July 2003; India's **GAGAN operational 2017**; also EGNOS.
+Q: Describe the GPS segments.
+A: Space (24 SVs, 6 planes, 21 + 3 spares, ~20 180 km altitude, 12 h period, 55 deg inclination), control, user.
+Q: GPS frequencies?
+A: L1 1575.42 MHz (C/A + P + nav message), L2 1227.6 MHz (P code, ionospheric delay), L3 1381.05 allocated for non-authorised users. Civil: C/A code only.
+Q: GPS errors? The biggest one?
+A: Ephemeris, SV clock, ionospheric (most significant), tropospheric.
+Q: What is RAIM and how many satellites?
+A: Receiver Autonomous Integrity Monitoring - checks GPS integrity; needs at least five visible satellites for fault detection.
+Q: ABAS vs GBAS vs SBAS?
+A: ABAS: onboard augmentation (e.g. RAIM). GBAS: local ground augmentation (LAAS) for precision approach, potentially Cat IIIC. SBAS: wide-area satellite augmentation (WAAS, EGNOS, GAGAN).
+
+# 35. Autopilot, Autoland & Radio Altimeter
+== Fail-safe autopilot
+Protects against malfunction/runaway by **limiting actuator authority**, so the pilot can always override.
+== Autoland needs
+Minimum **two independent autopilots**, **two independent radio altimeters**, and a **Cat III ILS** ground installation.
+**Fail-passive**: a single failure doesn't endanger safety or cause big flight-path deviation, but the automatic landing capability is lost - pilot takes over. Needs **two** autopilots (duplex).
+**Fail-operational**: after a failure (below alert height) the approach, flare and landing can still be completed automatically. Needs **three** (triplex).
+== Radio altimeter
+Accurate height from **2500 ft to 0 ft**; uses **FMCW** (frequency modulated continuous wave). Errors: **fixed error** (indicator moves in 5 ft steps -> up to 2.5 ft discrepancy), and **mushing error** (different antenna heights relative to terrain).
+== HF at night
+Frequency lowered at night: electron density drops, signals travel higher before refracting and are refracted less -> a daytime frequency would give a **longer skip distance** and leave the receiver in dead space.
+Q: Fail-passive vs fail-operational?
+A: Fail-passive: single failure leaves aircraft safe with no big deviation but can't complete autoland (two autopilots). Fail-operational: remaining system completes approach, flare and landing after failure below alert height (three autopilots).
+Q: What does autoland require?
+A: Minimum two independent autopilots, two independent radio altimeters, Cat III ILS ground installation.
+Q: How does a radio altimeter work and what are its errors?
+A: FMCW technique; accurate 2500 ft to 0. Fixed error (5 ft steps, 2.5 ft discrepancy) and mushing error (antenna height difference vs terrain).
+Q: Why use lower HF frequencies at night?
+A: At night electron density decreases; signals go higher and refract less; a daytime frequency would give a longer skip distance and leave the receiver in dead space.

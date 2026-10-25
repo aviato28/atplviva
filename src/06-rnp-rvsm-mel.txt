@@ -1,0 +1,93 @@
+# 18. RNP & PBN
+== RNP in one idea
+**RNP** = a numerical statement of navigational accuracy required in an airspace, set by the State per regional air navigation agreements. Based on **95% containment**: the aircraft is within the RNP value **at least 95% of the time**.
+RNP4 = within **4 NM** of plotted position 95% of the time. Applicable RNP values: **1, 4, 10, 12.6, 20**. VOR/DME airways/RNAV use "RNP5" - but **RNP5 doesn't officially exist** (it's RNAV 5). Radar permits RNP1; GPS theoretically ~RNP0.3.
+== Track spacing example (NAT)
+NAT MNPS is **RNP20**. Airspace reserved is 20 NM each side + a buffer equal to RNP: **20 + 20 + 20 = 60 NM** spacing.
+== RNAV vs RNP - the key difference
+Under PBN there are two categories: **RNAV** and **RNP**.
+**RNAV**: meet a specified accuracy 95% of flight time.
+**RNP**: an RNAV system **with on-board performance monitoring and alerting** (e.g. **RAIM**).
+Short phrase: **RNP = RNAV + monitoring and alerting.**
+RNAV benefits: time/fuel savings, less radar vectoring and fewer R/T calls, more efficient airspace use.
+== Nav specs (the table to know)
+**RNAV 1**: DPs and STARs; total system error (TSE) max **1 NM** 95% of time.
+**RNAV 2**: en-route (T-routes, Q-routes in the US sense); **2 NM** 95%.
+**RNAV 5**: **5 NM**; sensors VOR/DME, DME/DME, INS/IRS, GNSS; **direct pilot-ATC voice** required; no monitoring/alerting. Q routes in this doc are based on RNAV5; pilot notifies ATC if RNAV performance falls below RNAV5.
+**RNAV 10 (RNP 10)**: oceanic/remote; **10 NM**; **no on-board monitoring/alerting required**; no ground nav infrastructure; min route spacing **50 NM** (30 NM longitudinal if both aircraft have CPDLC + ADS-C and/or RNP4). Needs **two independent LRNS** (INS, IRS/FMS or GNSS), both operational at oceanic entry point. Flight plan: letter **R** in Item 10, and RNAV10 capability in Item 18.
+**RNP 4**: oceanic/remote; **4 NM**; **GNSS primary**; two independent LRNS; **30 NM** lateral and longitudinal separation; needs **CPDLC and ADS-C** when 30 NM is used; letter **R** in Item 10. Can't maintain RNP4 = don't enter/continue. May allow <30 NM en-route separation in continental airspace after DGCA safety assessment.
+**RNP 2**: en-route in oceanic, remote **and continental**; **2 NM**; GNSS primary; straight segments (can use **fixed radius transitions**); oceanic needs dual LRNS; tell ATC of any loss of RNP 2 capability.
+**RNP 1**: SIDs, STARs and approaches up to FAF (initial & intermediate); GNSS-based; **1 NM**; 95% of FTE must be within **0.5 NM**; intended for limited/no ATS surveillance; direct controller-pilot comms; alerting switches from terminal (+1 NM) to en-route (+2 NM) at **30 miles from the ARP**.
+== Approach RNAV specs
+Route to IAF: RNAV **5** | IAF to FAF: RNAV **1** | FAF to landing: RNAV **0.3** | Missed approach: RNAV **1**.
+**Q routes** (per the notes): based on RNAV 5; high-accuracy aircraft are allowed on RNP routes; more aircraft per airway; allow longitudinal separation of 50 NM.
+== Definitions
+**ABAS**: augmentation system that integrates GNSS info with onboard aircraft info. **ADS-C**: lets ground system and aircraft set up a data-link "contract" for reports.
+Q: What is RNP?
+A: Numerical statement of navigation accuracy required in an airspace, based on 95% containment. E.g. RNP4 = within 4 NM of plotted position for 95% of the time. Set by the State.
+Q: RNAV vs RNP?
+A: Both need accuracy 95% of the time, but RNP adds on-board performance monitoring and alerting (e.g. RAIM). RNP = RNAV + monitoring/alerting.
+T: RNP = RNAV with a Nanny (monitor + alert).
+QN: Which RNP values exist? Does RNP5 exist?
+A: RNP 1, 4, 10, 12.6, 20. RNP5 does not exist in RNP classification, though VOR/DME and RNAV use RNAV5.
+QN: How is NAT track spacing derived?
+A: NAT is RNP20: 20 NM either side plus a buffer equal to RNP = 20+20+20 = 60 NM.
+QN: RNAV specification during the approach phases?
+A: Route to IAF RNAV 5; IAF to FAF RNAV 1; FAF to landing RNAV 0.3; missed approach RNAV 1.
+Q: RNAV 10 / RNP 10 key points?
+A: Oceanic/remote; accuracy 10 NM 95% of flight time; no monitoring/alerting required; no ground navaids; two independent LRNS (INS, IRS/FMS, GNSS); min route spacing 50 NM (30 NM with CPDLC + ADS-C or RNP4); "R" in Item 10 and capability in Item 18.
+Q: RNP 4 key points?
+A: Oceanic/remote; 4 NM 95%; GNSS primary; two independent LRNS; 30 NM lateral/longitudinal separation; CPDLC and ADS-C required for 30 NM; R in Item 10; if can't maintain RNP4, don't enter or continue.
+Q: RNP 2 and RNP 1?
+A: RNP 2: en-route oceanic/remote/continental, 2 NM, GNSS, fixed radius transitions possible. RNP 1: SIDs/STARs/approach up to FAF, 1 NM, GNSS, 95% of FTE <= 0.5 NM, alerting switches from +1 NM (terminal) to +2 NM (en-route) at 30 miles from ARP.
+Q: What do you do if you lose RNP capability?
+A: Notify ATC immediately (integrity alerts / loss of navigation), with proposed action. RNP4: don't enter/continue if can't maintain.
+QN: Q routes?
+A: Based on RNAV 5; allow aircraft-to-aircraft longitudinal separation of 50 NM.
+Q: Advantages of RNAV routes?
+A: Time and fuel savings; less reliance on radar vectoring and altitude/speed assignments (fewer R/T calls); more efficient airspace use.
+
+# 19. RVSM
+== Definition
+**RVSM airspace**: designated airspace/route between **FL290 and FL410 inclusive** where aircraft are separated vertically by **1000 ft (300 m)** instead of 2000 ft. Indian and neighbouring airspace became RVSM on **27 November 2003**.
+Basic requirements: operator and aircraft comply with CAR; operator authorised by DGCA.
+Height keeping: mean total vertical error (TVE) not exceeding **25 m (80 ft)**.
+== Aircraft systems
+- **Two independent altitude measurement systems**, each with: cross-coupled static source with ice protection; equipment giving digitally encoded signal.
+- One SSR transponder with altitude reporting (Mode C).
+- **ACAS II**.
+- **Altitude deviation alerting** system.
+- **Automatic altitude control** system.
+== Flight envelope
+**Full RVSM flight envelope**: entire range of Mach, W/delta (weight/pressure ratio) and altitude over which the aircraft can cruise in RVSM airspace.
+**Basic RVSM flight planning envelope**: same as full but a lower **upper Mach boundary**.
+== Before entering RVSM
+Normal operation of: two primary altitude systems; one automatic altitude-control system; one altitude alerting device (when changing level, don't overshoot/undershoot cleared level by more than **45 m / 150 ft**); one transponder with Mode C.
+== Contingencies after entering
+Notify ATC of: failure of all automatic altitude-control systems; loss of altimetry redundancy; loss of thrust on an engine requiring descent; any failure affecting ability to maintain CFL; and encountering **greater than moderate turbulence**. If unable to notify ATC before deviating, follow established contingency procedures and get clearance ASAP.
+RT phrase: **"Unable RVSM due equipment"** or **"Unable RVSM due turbulence"**.
+Q: What is RVSM?
+A: Reduced Vertical Separation Minimum - between FL290 and FL410 inclusive, aircraft separated by 1000 ft (300 m). In India from 27 Nov 2003.
+Q: What equipment is needed for RVSM?
+A: Two independent altitude measurement systems (cross-coupled static source with ice protection, digital encoding), one Mode C transponder, ACAS II, altitude deviation alerting, automatic altitude control.
+QN: RVSM height keeping and level change tolerance?
+A: Mean total vertical error not exceeding 25 m (80 ft). When changing levels, do not overshoot/undershoot by more than 45 m (150 ft).
+Q: What RT phrase if you can't maintain RVSM?
+A: "Unable RVSM due equipment" or "Unable RVSM due turbulence".
+Q: What contingencies must be reported inside RVSM?
+A: Failure of all automatic altitude control; loss of altimetry redundancy; engine thrust loss forcing descent; any failure affecting CFL; turbulence greater than moderate.
+Q: Full vs basic RVSM envelope?
+A: Full envelope: all operational Mach, W/delta and altitude combinations. Basic planning envelope: same but with a reduced upper Mach boundary.
+
+# 20. MEL vs MMEL
+== The idea
+**MMEL** = Master Minimum Equipment List for an aircraft **type family**.
+**MEL** = tailored to the **operator's specific aircraft, route structure, geography, spares and maintenance capability**. The MMEL can't cover these local variables (or phrases like "as required by regulations"), so an **MMEL cannot be approved for use as a MEL**.
+MEL does **not** cover essential airworthiness items: engine, landing gear, flaps, wings, flight control surfaces.
+== Repair categories
+**A**: as per remarks | **B**: 3 days | **C**: 10 days | **D**: 120 days.
+T: A = "Ask the remarks", then B-3, C-10, D-120.
+Q: MEL vs MMEL?
+A: MMEL covers an aircraft type family; MEL is tailored to the operator's aircraft and environment (routes, airports, spares, maintenance). MMEL cannot be approved as a MEL. MEL doesn't cover essential airworthiness items (engines, landing gear, flaps, wings, flight controls).
+QN: MEL categories A, B, C, D?
+A: A - as per remarks; B - 3 days; C - 10 days; D - 120 days.

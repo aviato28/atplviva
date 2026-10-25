@@ -1,0 +1,192 @@
+# 21. Navigation General
+== Earth and basic lines
+ICAO earth model: **WGS 84**.
+**Great Circle**: a circle on the earth's surface whose centre and radius are those of the earth. Shortest distance between two points.
+**Rhumb line**: a curve cutting **all meridians at the same angle** (constant direction). It always lies **nearer the Equator** than the corresponding great circle.
+**Nautical mile**: length of arc of a great circle subtending **one minute** of angle at the earth's centre.
+Why isn't a GC track constant? Because of **convergency** of meridians.
+== Direction vocabulary
+**Variation**: angle between True and Magnetic north at a point. **Isogonal** = line of equal variation. **Agonic line** = zero variation.
+**Deviation**: angle between the compass needle direction and Magnetic North (caused by the aircraft's own magnetism).
+**Heading**: direction the nose points (True, Magnetic or Compass). **Track**: path over the ground.
+**Drift** = angle between heading and track.
+Planned track vs track made good (TMG): difference = **track error angle (TEA)**. Heading vs planned track = *expected drift*. Heading vs TMG = *actual drift*.
+== The 1 in 60 rule
+**1 degree off at 60 NM = 1 NM off track.** Used for getting back on track:
+1. Double the track error angle. 2. TEA + closing angle. 3. Combined single calculation.
+Other uses: height on a glide slope; rate of descent; shallow slopes (runway slopes); distance off track using VOR/DME.
+For a glideslope of Z degrees: descent = **100 x Z ft per NM** (3 deg = 300 ft/NM).
+**ROD (ft/min) = 5 x groundspeed (kt)** for a 3 deg glideslope. For other angles scale by (actual angle / 3). Change in ROD = 5 x change in speed.
+Example: GS 140 kt -> 700 ft/min.
+== Convergency, conversion angle, departure
+**Convergency**: angle of inclination between two meridians measured at a given latitude. Zero at the Equator (parallel), maximum at the pole (equals change of longitude).
+**Conversion angle**: difference between great circle direction and rhumb line direction between two points.
+**Departure**: distance between two meridians along a parallel of latitude (NM).
+== Scale
+Relationship between a chart distance and the true earth distance. Expressed three ways: **statement in words, graduated scale line, representative fraction**.
+Q: What is a great circle? What is a rhumb line?
+A: Great circle: circle whose centre and radius are the Earth's; shortest path. Rhumb line: line cutting all meridians at the same angle (constant direction); always lies nearer the Equator than the GC.
+Q: Define a nautical mile.
+A: Length of arc of a great circle subtending an angle of one minute at the Earth's centre.
+Q: Variation, isogonal, agonic line, deviation?
+A: Variation: True-Magnetic north angle. Isogonal: line of equal variation. Agonic: zero variation. Deviation: angle between the compass needle direction and magnetic north.
+Q: Heading, track, drift?
+A: Heading: direction the aircraft's longitudinal axis points. Track: path over the ground. Drift: angle between heading and track.
+Q: Explain the 1 in 60 rule.
+A: One degree of angular error equals one nautical mile at a distance of 60 NM from origin.
+QN: Rate of descent for a 3 degree glideslope?
+A: 300 ft per NM; ROD (ft/min) = 5 x groundspeed (kt). Other angles: scale by angle / 3.
+Q: What are convergency and conversion angle? Where is convergency zero and maximum?
+A: Convergency: angle between two meridians at a given latitude; zero at the equator, max at the pole (= change of longitude). Conversion angle: difference between GC and rhumb line direction between two points.
+Q: Why is a GC track not constant?
+A: Because of convergency of the meridians.
+Q: What is departure?
+A: Distance between two meridians along a parallel of latitude, in NM.
+Q: How is scale expressed?
+A: Statement in words, graduated scale line, representative fraction.
+
+# 22. Charts & Projections
+== Three families
+**Azimuthal/plane**: paper touching the earth at a point (polar charts). **Cylindrical**: paper wrapped around, touching at the Equator (Mercator, Transverse, Oblique). **Conical**: cone over the earth, later slit and flattened (Lambert).
+**Orthomorphism (conformality)** needs two things: (1) meridians & parallels intersect at **right angles**; (2) at any point, scale is the **same in all directions** (or changes at the same rate).
+== Mercator
+Cylinder touching at the Equator, light at the centre. Meridians equally spaced parallel lines; a straight line = a **rhumb line**. Non-perspective.
+Uses: plotting charts up to **75 deg latitude**, topographical charts of equatorial areas, met synoptic charts for equatorial regions.
+Limits: great circles are NOT straight; scale not constant.
+== Lambert Conformal Conic
+Cone tangent along a parallel; apex on the earth's axis extension; light at the centre.
+Advantages: great circles are practically **straight lines**; **radio bearings (great circles) can be plotted without conversion angle**; if scale error is small a ruler works.
+Most Jeppesen enroute charts use Lambert.
+== Polar Stereographic
+Flat surface touching one pole; light source at the **opposite pole**. The only true perspective projection of the three. Used for polar regions.
+== Cheat table
+- Light source: Mercator centre | Lambert centre | Polar Stereo opposite pole.
+- Scale correct: Mercator at equator | Lambert at standard parallels | PS at pole.
+- Scale roughly constant: Mercator within 8 deg of equator | Lambert within 16 deg change between standard parallels | PS up to 78 deg.
+- Orthomorphic: all yes.
+- Rhumb line: straight on Mercator | concave to pole on Lambert & PS.
+- Great circle: concave to equator on Mercator | straight-ish on Lambert | straight to ~70 deg on PS.
+- Parallel of origin: Equator | halfway between standard parallels | the pole.
+- Chart convergence: zero on Mercator | constant on Lambert | constant on PS.
+Q: What are the conditions for orthomorphism?
+A: Meridians and parallels intersect at right angles; scale is the same in all directions at any point (or changes at the same rate).
+Q: Describe Mercator, its uses and limits.
+A: Cylinder touching at equator, light at centre. Straight line = rhumb line; meridians parallel and equally spaced. Used up to 75 deg lat and equatorial areas. Limits: GCs aren't straight and scale isn't constant.
+Q: Why Lambert's conformal conic?
+A: Great circles are practically straight, radio bearings plot without conversion angle, and scale is nearly constant so you can measure with a ruler.
+Q: Polar Stereographic - what's special?
+A: Light at the opposite pole, flat surface touches one pole; the only true perspective projection of the set; used for polar charts; scale correct at pole.
+
+# 23. Critical Point & PNR
+== Critical Point (CP)
+**CP** = the decision point between two airfields from which it takes the **same time** to fly to either. Think cabin fire or a heart attack: go back or go on?
+Rules:
+1. CP is **independent of fuel endurance**.
+2. In still air it's at the **midpoint**.
+3. CP always moves **into wind** from the still-air midpoint.
+4. If wind reduces, CP moves toward the midpoint.
+5. Increasing TAS has the same effect as reducing wind.
+== Point of Safe Return / PNR
+**PSR/PNR** = furthest point along the route you can fly and still return to the departure (or departure alternate) within **safe endurance**.
+Rules:
+1. Max distance to PNR is in **still air**.
+2. If a wind component increases, the distance to PNR **decreases**.
+3. Increased TAS has the same effect as reduced wind -> **distance to PNR increases**.
+== Air miles
+**NAM** (nautical air miles) = air distance at TAS. **NGM** = ground distance on a chart. In still air they're equal.
+Safe flight level is chosen from the **planned magnetic track** (not heading).
+Q: What is the Critical Point?
+A: The point between two airfields from which flight time to either is equal. Independent of endurance; midpoint in still air; moves into wind; moves back to the midpoint if wind reduces; more TAS acts like less wind.
+Q: What is PNR/PSR?
+A: Furthest point on the route from which you can return to the departure airfield (or departure alternate) within safe endurance.
+Q: How do wind and TAS affect PNR distance?
+A: Max in still air; larger wind component reduces it; higher TAS increases it.
+Q: NAM vs NGM?
+A: NAM = distance flown through the air at TAS; NGM = distance over the ground measured on chart. Equal in still air.
+Q: What determines the safe flight level choice?
+A: Planned magnetic track, not heading.
+
+# 24. Altimetry Definitions & Altitudes
+== Definitions
+**Aerodrome elevation**: elevation of the highest point of the landing area.
+**Altitude**: vertical distance from mean sea level (**QNH**). **Height**: vertical distance from a datum (**QFE**). **Flight level**: constant-pressure surface related to **1013.2 hPa**.
+**QNH**: sub-scale setting to read elevation on the ground. **QFE**: pressure at aerodrome elevation/runway threshold. **QNE**: height indicated on landing when sub-scale is 1013.2.
+**DA vs DH**: DA is referenced to **mean sea level**; DH to the **threshold elevation**.
+**Transition altitude (TA)**: altitude at or below which vertical position is controlled by altitude. **Minimum TA in India: 4000 ft**. **Transition level**: lowest FL above TA. **Transition layer**: airspace between them.
+== Minimum altitudes
+**MEA**: lowest published altitude between radio fixes that meets obstacle clearance and nav signal coverage - applies to the whole width of the airway.
+**MOCA**: lowest published altitude between radio fixes on VOR airways that meets obstacle clearance for the entire segment; assures navigation signal coverage only within **22 NM of a VOR**.
+**MORA**: Jeppesen-derived; known obstacle clearance within **10 NM** of route centreline.
+**MAA**: maximum usable altitude/FL for an airspace structure or route segment.
+**Grid MORA**: Jeppesen/State; terrain & man-made structure clearance in a lat/long grid cell. Clearance **1000 ft** where terrain is 5000 ft amsl or lower; **2000 ft** where 5001 ft or higher. No navaid/comm coverage guarantee. "Unsurveyed" = insufficient data. Values with +/- = doubtful accuracy.
+Q: Define altitude, height and flight level.
+A: Altitude: vertical distance from MSL (QNH). Height: from a specified datum (QFE). FL: constant pressure surface related to 1013.2 hPa.
+Q: DA vs DH?
+A: DA is referenced to mean sea level; DH to threshold elevation.
+QN: Transition altitude in India?
+A: Minimum 4000 ft.
+Q: Transition altitude, layer and level?
+A: TA: altitude at/below which vertical position is by altitude. TL: lowest flight level above TA. Layer: the airspace between.
+Q: MEA vs MOCA vs MORA vs MAA?
+A: MEA: obstacle clearance + nav coverage between fixes for the whole airway. MOCA: obstacle clearance on VOR airways, nav coverage only within 22 NM of VOR. MORA: Jeppesen, obstacle clearance within 10 NM of centreline. MAA: maximum usable altitude for a route/structure.
+QN: Grid MORA clearance?
+A: 1000 ft above terrain/obstacles where highest terrain is 5000 ft or lower; 2000 ft where 5001 ft or higher. No navaid or comm coverage guaranteed.
+
+# 25. Flight Planning, Fuel & Holding
+== Flight plan basics
+**Wake turbulence category**: H = Heavy (136 000 kg or more), M = Medium (under 136 000 but over 7000 kg), L = Light (7000 kg or less).
+**Flight rules**: I = IFR, V = VFR, **Y** = IFR first then VFR, **Z** = VFR first then IFR (specify the change points in Item 15).
+== Fuel planning (as in the notes)
+Piston / propeller:
+- Alternate required (IFR): fuel to destination + fuel to alternate + **45 min** holding.
+- Alternate not required (VFR): destination + **45 min**.
+- Isolated aerodrome: destination + 45 min + 15% of trip, **or** 2 hours at normal consumption, whichever is **less**.
+Turbojet:
+- Alternate required: destination + alternate + **30 min holding at 1500 ft AGL over the alternate** + **5% trip fuel contingency**.
+- Alternate not required: destination + **30 min** holding at 1500 ft AGL.
+- Isolated aerodrome: destination + **2 hours** at normal consumption.
+== Fuel components
+**Start & taxi**, **Trip** (take-off to landing), **Contingency** (% of trip; becomes part of landing mass if unused), **Alternate** (missed approach, climb, transit, arrival, approach and landing at alternate), **Final reserve** (45 min piston / 30 min jet at holding speed), **Additional** (only if the previous aren't enough).
+== Holding
+A holding pattern is a time delay by ATC to maintain separation. It has a fix, a direction to hold from the fix and a track. Entries: **direct, parallel, tear-drop**.
+- Standard hold: **right-hand turns**; non-standard: left.
+- Inbound leg: **1 min at or below 14 000 ft, 1.5 min above**.
+- Pattern size is proportional to speed (double speed = double size).
+- DME hold: clearance gives the **outbound leg length in NM**.
+Q: Wake turbulence categories?
+A: Heavy 136 000 kg or more; Medium between 7000 and 136 000 kg; Light 7000 kg or less.
+Q: What do flight rules Y and Z mean?
+A: Y: IFR first then VFR; Z: VFR first then IFR; change points are given in Item 15.
+Q: Fuel required for a turbojet with alternate?
+A: Fuel to destination + fuel to alternate + 30 min holding at 1500 ft AGL over the alternate + 5% of trip fuel contingency.
+QN: Isolated aerodrome fuel?
+A: Turbojet: destination + 2 hours at normal consumption. Piston: destination + 45 min + 15% of trip fuel OR 2 hours, whichever is less.
+Q: Fuel components?
+A: Start and taxi; trip; contingency; alternate; final reserve (45 min piston, 30 min jet at holding speed); additional.
+Q: How long is the inbound leg of a hold?
+A: 1 minute at or below 14 000 ft, 1.5 minutes above.
+Q: What are the hold entries?
+A: Direct, parallel and teardrop. Standard hold turns right; non-standard turns left.
+
+# 26. Jeppesen Charts & Approach Segments
+== Jeppesen enroute charts
+Mostly **Lambert Conformal Conic**. Identified by area code letters, parenthetical altitude coverage and chart number: e.g. **ME(H/L)11** = Middle East, high/low, chart 11.
+The front is the **cover panel** with an index map. The **Zigdex** at the top of each panel lists major cities.
+Chart conventions: bearings/radials **magnetic**; distances **NM**; elevations in **feet amsl**; altitudes in feet (QNH) or flight levels (QNE); times **UTC**; scale **1 inch = 30 NM**; effective dates on cover panel.
+Restricted airspace: red slanting lines, coded country code + FIR + **D / P / R** = **Danger / Prohibited / Restricted**.
+== Approach segments (up to five)
+1. **Feeder route**: en-route structure to IAF.
+2. **Initial approach**: IAF to intermediate fix (IF); aligns the aircraft.
+3. **Intermediate approach**: IF to final approach segment; positions for final descent.
+4. **Final approach**: PA/APV starts where the glideslope intercepts; NPA starts at FAF/FAP or when established on final; ends at MAP or on landing.
+5. **Missed approach**: from MAP to a point where the initial or en-route segment begins.
+Q: What projection do Jeppesen enroute charts use? How do you read ME(H/L)11?
+A: Lambert Conformal Conic. ME(H/L)11 = Middle East series, high and low altitude, chart number 11.
+Q: What is the Zigdex?
+A: A feature at the top of low and high/low Jeppesen chart panels listing the major cities, helping you find the right panel.
+Q: Chart conventions?
+A: Magnetic bearings, NM distances, elevation in feet amsl, altitudes in feet (QNH) or FL (QNE), UTC time, scale 1 in = 30 NM.
+Q: What do D, P, R mean in restricted airspace?
+A: Danger, Prohibited, Restricted.
+Q: What are the segments of an instrument approach?
+A: Feeder route, initial, intermediate, final, missed approach.

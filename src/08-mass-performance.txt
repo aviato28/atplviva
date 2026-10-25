@@ -1,0 +1,134 @@
+# 27. Mass & Balance
+== The Centre of Gravity
+CG isn't a fixed point - it moves within a range between a **max forward** and **max aft** limit set by the manufacturer. Never exceed them.
+**Datum**: manufacturer's zero reference along the longitudinal axis from which all balance arms start. **Balance arm**: distance from datum to the CG of a mass.
+**CG position = total moment / total mass.** Moment = mass x arm. Nose-up moments positive, nose-down negative.
+Mass is kilograms; weight is a force in Newtons.
+== The mass ladder (learn in order)
+**BEM / tare**: aircraft with basic equipment + declared unusable fuel and oil.
+**DOM**: ready for a specified operation, **excluding all fuel and traffic load**; includes crew + baggage, catering and removable passenger service equipment, potable water and lavatory chemicals.
+**Traffic load** (payload): the revenue-earning load.
+**Ramp mass** = DOM + usable fuel + traffic load. **Take-off mass** = ramp mass - start & taxi fuel.
+**Max traffic load** = MSTOM - DOM - take-off fuel.
+**MZFM**: max permissible mass with no usable fuel.
+**RATOM/MATOM** = lesser of MSTOM or performance-limited TOM. **RLM/MALM** = lesser of MLM or performance-limited LM.
+**Payload** is the lowest of three limits: RTOW-based, MLW + flight fuel, MZFW + FOB.
+== Fuel load definitions
+**Start & taxi**: APU/engine start and taxi to the threshold. **Trip**: take-off run, climb, cruise, descent, arrival, approach and landing. **Contingency**: % of trip for unforeseen events. **Alternate**: missed approach at destination -> alternate and landing. **Final reserve**: 45 min piston / 30 min jet. **Additional**: only if the above are insufficient.
+Q: How do you calculate CG?
+A: CG = total moment / total mass, where moment = mass x arm from the datum. Nose-up moments positive.
+Q: What are datum and balance arm?
+A: Datum: reference point on the longitudinal axis from which arms are measured. Balance arm: distance from datum to the CG of a mass.
+Q: Explain BEM, DOM, ramp mass, take-off mass.
+A: BEM: aircraft + basic equipment + unusable fuel/oil. DOM: ready for operation excluding fuel and traffic load (crew, catering, water). Ramp = DOM + fuel + traffic load. Take-off mass = ramp - start/taxi fuel.
+Q: MZFM?
+A: Maximum permissible mass of the aeroplane with no usable fuel.
+Q: How do you find max traffic load?
+A: MSTOM - DOM - take-off fuel.
+Q: How do you calculate payload?
+A: Take the lowest of: RTOW, MLW + flight fuel, MZFW + FOB; then subtract OM/FOB to get the allowed payload.
+
+# 28. Performance Definitions
+== Runway declared distances
+**TORA**: take-off run available. **TODA** = TORA + clearway (cannot exceed 1.5 x TORA). **ASDA** = TORA + stopway. **LDA** = length of runway from threshold to threshold available for landing.
+**Balanced field**: ASDA = TODA (a runway with no stopway or clearway is balanced).
+**Clearway**: area beyond the runway, **at least 152 m (500 ft) wide**, centred on the extended centreline, under airport authority control; a plane sloping up at **not more than 1.25%** with no obstacle through it. Purpose: ensure aircraft doesn't hit obstacles after leaving the runway.
+**Stopway**: area beyond the take-off run, at least as wide as the runway, able to support the aeroplane in an abort without structural damage.
+== Other definitions
+**Critical engine**: the engine whose failure most adversely affects performance or handling.
+**Damp runway**: not dry, but moisture doesn't give a shiny appearance.
+**Hydroplaning speed**: speed at which the wheel is lifted off by a depth of water and directional control through it is impossible.
+**Pressure altitude**: altitude above the 1013.25 hPa level.
+**Service ceiling**: pressure altitude where rate of climb falls to a specified value (~300 ft/min). **Absolute ceiling**: ROC = 0. Both decrease with higher mass and temperature.
+**ACN vs PCN**: ACN (aircraft) must not exceed PCN (pavement). A 10% exceedance is generally acceptable on good pavement; occasional use with ACN up to 50% above PCN may be permitted.
+**Gross performance**: average fleet performance if well maintained and flown per manual. **Net performance**: gross, diminished for contingencies (pilot technique, below-average performance). **Measured performance**: achieved by manufacturer under test conditions with new aircraft and test pilots.
+**En-route phase**: from 1500 ft above take-off surface to 1000 ft above landing aerodrome (Class B) or 1500 ft (Class A).
+**Flat-rated engine**: thrust capped at a maximum even though the engine could produce more; below the flat rating cut-off (typically ISA +15 C) thrust isn't affected by temperature.
+**Take-off mass**: mass including everything at the start of take-off run.
+**Performance limited mass**: set by field length, climb, tyre speed, brake energy. **Regulated TOM**: the lower of performance-limited and max structural mass.
+Q: Define TORA, TODA, ASDA, LDA.
+A: TORA: take-off run available. TODA: TORA + clearway (max 1.5 x TORA). ASDA: TORA + stopway. LDA: runway length available for landing, threshold to threshold.
+Q: What is a balanced field?
+A: ASDA = TODA (e.g. a runway without stopway or clearway).
+Q: Clearway vs stopway?
+A: Clearway: at least 152 m wide area beyond runway under authority control, slope not more than 1.25%, free of obstacles; lets aircraft climb out. Stopway: area at least as wide as runway able to support an aborted take-off without damage.
+Q: Gross vs net vs measured performance?
+A: Gross: average fleet performance flown per manual. Net: gross reduced for contingencies. Measured: test-condition performance by test pilots on new aircraft.
+Q: Service ceiling vs absolute ceiling?
+A: Service ceiling: rate of climb falls to a specified value (~300 ft/min). Absolute: rate of climb is zero.
+Q: ACN and PCN?
+A: ACN is aircraft load on pavement; PCN is pavement strength. Operation allowed if ACN <= PCN; 10% over is generally acceptable on good pavement.
+Q: What is a flat-rated engine?
+A: Thrust limited to a maximum even though engine can produce more; below flat-rating temperature (~ISA +15) thrust unaffected by temperature.
+
+# 29. V-Speeds & Take-off
+== The story of a take-off in V speeds
+Accelerating down the runway: **VMCG** (can I control it on the ground if an engine dies?) -> **VEF** (engine fails here) -> **V1** (decision) -> **VR** (rotate) -> **VMU/VLOF** (lift-off) -> **V2** (safety speed by 35 ft) -> **V3** (all-engine climb speed).
+== Definitions
+**VMCG**: minimum speed on the ground at which the take-off can safely continue when the critical engine suddenly fails with the rest at take-off thrust. Only the rudder is used (ailerons would bank the wing into the ground; no nosewheel steering). Depends on thrust, i.e. air density: **density up = VMCG up**.
+**VMCA/VMC**: minimum control speed in the air, max **5 deg bank**, critical engine failed suddenly, others at take-off thrust. **VMCL**: landing approach version with a wing engine inoperative.
+**VEF**: CAS at which the critical engine is assumed to fail; never less than VMCG.
+**V1**: the maximum speed at which the first action must be taken to stop within the ASDA (**VSTOP**), and the minimum speed after engine failure at which the take-off can be continued within TODA (**VGO**).
+Engine failure **before V1 -> abort**. **After V1 -> continue**.
+V1 rules: not less than VEF + speed gained until the pilot reacts; not more than VR; not more than VMBE; not less than VMCG.
+**VMBE**: max brake energy speed - the max ground speed from which the brakes can safely stop. Heavier mass reduces it; also affected by pressure altitude, temperature, slope, wind.
+**VMU**: minimum unstick speed. **VLOF**: speed at which main wheels leave the ground (should be faster than VMU).
+**VR**: pilot begins rotation. Not less than V1, 1.05 VMC, or a speed allowing V2 by 35 ft. Increasing mass increases VR; flaps down decreases VR; density down increases VR.
+**V2**: take-off safety speed, target one-engine-out speed, reached by 35 ft. Must exceed stall and VMC. After engine failure, fly **V2 until 400 ft**.
+**V3**: steady initial climb speed with all engines.
+**VLE** = max speed with gear extended. **VLO** = max speed to operate the gear. **VREF** = speed at landing screen height.
+== Factors changing V1
+- Mass up -> V1 up.
+- Flap angle up -> V1 down.
+- Density down -> V1 up.
+- Downslope -> V1 down; upslope -> V1 up.
+- Tailwind -> V1 down; headwind -> V1 up.
+Early rotation (at low speed): lift-off still happens at VLOF but with more drag while rotated, so a longer distance to lift-off.
+Q: What is V1?
+A: Decision speed: max speed at which the first stopping action must be taken to stop within the ASDA (VSTOP), and the min speed after engine failure from which take-off can be continued within TODA (VGO). Failure before V1 abort; after V1 continue.
+Q: What limits V1?
+A: Not less than VEF + gain until reaction, not less than VMCG, not more than VR, not more than VMBE.
+T: V1 lives in a sandwich: VMCG below, VMBE (and VR) above.
+Q: What affects V1?
+A: Mass up -> up; flaps up (more flap) -> down; density down -> up; downslope -> down; tailwind -> down.
+Q: What is VMCG and why use the rudder only?
+A: Min ground control speed when critical engine fails at take-off thrust. Ailerons cannot be used on the ground (would bank into the ground), so only rudder. Higher density = more thrust = higher VMCG.
+Q: VR rules?
+A: Not less than V1, 1.05 VMC, or a speed that allows V2 by 35 ft. Mass up -> VR up; flap up -> VR down; density down -> VR up.
+Q: What is V2 and how long do you fly it after engine failure?
+A: Take-off safety speed with one engine inoperative, reached by the screen height; above stall and VMC; fly V2 until 400 ft.
+Q: VMU vs VLOF?
+A: VMU: slowest CAS where aeroplane can safely lift off and continue. VLOF: actual speed when main wheels leave the runway, should be above VMU.
+Q: What is VMBE?
+A: Maximum brake energy speed - max speed from which the brakes can safely stop the aeroplane; V1 may not exceed it.
+
+# 30. Take-off Climb, Landing & Climb Performance
+== Take-off flight path
+From **35 ft** (15 ft for a contaminated runway) to **1500 ft** above the take-off surface. Four segments:
+**Segment 1**: starts at 35 ft at V2, one engine out; ends **gear up and locked**. Gradient must be positive.
+**Segment 2**: gear up -> climb at not less than V2 to **400 ft**. **Most severe requirement: 2.4%** (twin jet).
+**Segment 3**: at/above 400 ft: **acceleration and flap retraction** from V2 to zero-flap speed and then to final take-off speed (= best one-engine-out angle of climb).
+**Segment 4**: flaps up, final segment speed, **maximum continuous thrust**; climb to 1500 ft; gradient not less than **1.2%**.
+== Turns and obstacles
+Turns not below half the wingspan or 50 ft (whichever is greater). Bank limit: **15 deg up to 400 ft**, **25 deg above 400 ft**.
+Net take-off flight path clears obstacles by **35 ft** vertically; if a turn of more than 15 deg is needed, **50 ft**.
+**Climb limit mass** (WAT/MAT limit): max mass that meets the minimum climb performance - the most severe requirement is **2.4%**.
+== Climb physics
+Steady climb: **T = D + W sin(theta)** -> **sin(theta) = (T - D)/W**. Climb gradient = height gained / distance = tan(angle).
+**Rate of climb** = (power available - power required)/W; max when excess power is greatest = **Vy**.
+== Landing
+Landing distance starts at **50 ft** screen height (fixed for all classes; take-off screen is 35 ft for class A, 50 ft for class B) and ends at a complete stop. Must reach **VREF** by the screen.
+Two parts: **airborne section** (50 ft to main wheel touchdown, ~1000 ft) and **ground roll**. Landing distance formula (simplified): **d = V^2 / 2a**.
+Q: Explain the four take-off climb segments.
+A: Seg 1: 35 ft at V2 until gear up. Seg 2: gear up to 400 ft at V2, min gradient 2.4% (twin jet). Seg 3: level acceleration and flap retraction to final take-off speed. Seg 4: max continuous thrust to 1500 ft, gradient not less than 1.2%.
+T: 1-Gear, 2-400ft, 3-Flaps, 4-1500ft. Gradients: 0 (positive), 2.4, (accel), 1.2.
+QN: Bank limits on take-off flight path?
+A: No turns below half wingspan or 50 ft; 15 deg bank up to 400 ft; 25 deg above 400 ft.
+QN: Obstacle clearance on net take-off path?
+A: 35 ft vertical; 50 ft if turn of more than 15 deg.
+Q: What is the climb limit mass?
+A: Max mass at which the aeroplane meets the minimum (most severe) climb gradient requirement, 2.4%. Also called WAT/MAT limit.
+Q: Which speed gives max rate of climb?
+A: Vy, where excess power is greatest.
+Q: Where does the landing distance start?
+A: 50 ft above threshold (landing screen height) until the aeroplane stops; airborne section ~1000 ft plus ground roll.

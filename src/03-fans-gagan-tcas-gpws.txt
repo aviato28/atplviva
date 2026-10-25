@@ -1,0 +1,111 @@
+# 7. FANS, CPDLC & Datalink
+== The problem FANS solves
+Over land: radar + VHF = **positive control**, tight spacing. Over oceans, deserts, poles: no radar, so ATC uses **procedural control** over **HF** with *huge* separations -> low traffic density.
+North Atlantic numbers (same direction):
+- **MNPS/RVSM airspace**: **60 nm** lateral, **10 min** longitudinal, **2000 ft** vertical.
+- **Non-MNPS/RVSM**: **120 nm**, **15 min**, **4000 ft**.
+Position reports every **10 deg of longitude** up to 70N, every **20 deg** north of that -> an update only every **30-60 minutes**. That's the gap FANS closes.
+== What is FANS?
+**Future Air Navigation System**: a concept to let more aircraft use a given volume of airspace safely. Uses **satellite comms + satellite navigation (GNSS)** to create a *virtual radar environment* where radar doesn't exist.
+Gives ATC continuous position info and direct pilot-controller comms -> separations can be **significantly reduced**. If position accuracy degrades, **TCAS** is still there as backup.
+**FANS-1** = Boeing standard. **FANS-A** = Airbus standard. FANS A/1 provides **CNS** (communication, navigation, surveillance) and **ADS**.
+== Data link family tree
+**ACARS**: telex-format, 2.4 kbps, VHF (printed in cockpit) -> SATCOM early 1990s -> HF in 2001 for polar gap.
+**VDL Mode 2**: 31.5 kbps (>10x ACARS). Needs a specific aircraft address - the unique **Mode S address**. Part of the **ATN** (aeronautical telecommunications network) linking ATC and AOC to the aircraft. This digital system is what we call CPDLC.
+**CPDLC**: controller-pilot data link communications - ATC communication by data link. Messages are in a **fixed format** in FMS/ATSU computers, triggered by the controller or pilot (instruction or response to a request). Covers **pre-departure clearance (PDC), taxi, take-off, climb, en-route, descent, landing**, plus emergency/safety messages.
+Q: What is FANS and why was it developed?
+A: Future Air Navigation System - allows more aircraft to use airspace safely and efficiently. Uses satellite comms + GNSS to give a virtual radar environment where there's no radar (oceanic, desert, polar), allowing reduced separation. TCAS remains the safety net.
+Q: FANS-1 vs FANS-A?
+A: FANS-1 is the Boeing standard; FANS-A is the Airbus standard. Together FANS A/1 provide CNS and ADS.
+QN: North Atlantic separation in MNPS/RVSM vs non-MNPS/RVSM?
+A: MNPS/RVSM: 60 nm lateral, 10 min longitudinal, 2000 ft vertical. Non-MNPS/RVSM: 120 nm, 15 min, 4000 ft.
+Q: How often do aircraft report position over the North Atlantic?
+A: Every 10 deg of longitude up to 70N, every 20 deg north of that - so ATC gets updates every 30-60 min.
+Q: What is CPDLC?
+A: Controller-Pilot Data Link Communications - a means of communicating between controller and pilot by data link, with fixed-format messages in FMS and ATSU covering all phases (PDC, taxi, take-off, climb, en-route, descent, landing) plus emergency messages.
+QN: ACARS vs VDL Mode 2?
+A: ACARS 2.4 kbps; VDL Mode 2 31.5 kbps (10x+). VDL Mode 2 uses the aircraft's unique Mode S address and is part of the ATN.
+
+# 8. GAGAN & IRNSS
+== What is GAGAN?
+**GPS Aided GEO Augmented Navigation** - India's **SBAS** (Satellite Based Augmentation System), built by **ISRO + AAI (Airports Authority of India)**.
+It improves the accuracy of GNSS receivers by providing **reference signals**, adding **accuracy, availability and integrity** for all phases of flight, en-route through approach.
+Interoperable with other SBAS: **US WAAS, European EGNOS**.
+== Why it matters
+- More efficient/safer ops, fuel savings.
+- **Vertical guidance at runways** means ground aids can be withdrawn = big cost savings, lower crew and controller workload.
+== The milestones
+- **30 Dec 2013**: DGCA certified GAGAN for en-route (**RNP 0.1**).
+- **21 Apr 2015**: certified for precision approach services (**APV 1**).
+- **First SBAS in the world certified for approach with vertical guidance in the equatorial ionospheric region**. India became the **third country** with such capability.
+Q: What is GAGAN?
+A: GPS Aided GEO Augmented Navigation - India's SBAS developed by ISRO and AAI to improve GNSS accuracy, availability and integrity for all phases of flight within the Indian airspace and adjoining areas.
+Q: What are the GAGAN certification dates and levels?
+A: 30 Dec 2013 - en-route (RNP 0.1). 21 Apr 2015 - approach with vertical guidance (APV 1).
+Q: What's special about GAGAN?
+A: First SBAS certified for approach with vertical guidance in the equatorial ionospheric region; India is the third country with such capability. Interoperable with WAAS (US) and EGNOS (Europe).
+Q: Benefits of GAGAN to airlines?
+A: Accuracy, availability, integrity in all phases; fuel efficiency and safety; vertical guidance lets ground aids be withdrawn, cutting cost and reducing crew/controller workload.
+
+# 9. TCAS
+== In one sentence
+TCAS gives an **additional safety margin, independent of ATC**, to keep aircraft clear of conflict.
+== TCAS I vs TCAS II
+**TCAS I**: first generation; only **warns** of traffic. Shows range and approximate relative bearing (relative altitude too if the intruder has **Mode C**). Gives **TAs only**: "Traffic, Traffic".
+**TCAS II**: detects intruders, assesses collision risk, gives **TAs and RAs** - e.g. "Climb", "Increase Climb", "Descend", "Increase Descent", "Monitor Vertical Speed". **RAs are vertical manoeuvres only.**
+== How it works
+Works on the **secondary radar principle** at **1030 MHz (interrogate) / 1090 MHz (reply)**, but air-to-air. It builds **two 3D protective bubbles** around your aircraft.
+You need at least a **Mode A transponder**; if an aircraft's transponder is off or unserviceable, it's **invisible** to TCAS.
+== The two bubbles
+**TA**: intruder enters the OUTER bubble (caution) - **45 to 35 seconds** from collision area. Display: **solid amber circle**.
+**RA**: intruder enters the INNER bubble (warning) - **30 to 20 seconds** from collision area. Display: **solid red square/rectangle**.
+**Proximate traffic**: solid cyan diamond, within +/-**1200 ft** relative height. **Other traffic**: hollow cyan diamond, within +/-**2700 ft**.
+== What do you do?
+**TA**: begin a visual search of that part of the sky.
+**RA**: initiate the manoeuvre **immediately**, adjust flight path, power and trim, and tell ATC as soon as possible about any deviation from clearance.
+Q: TCAS I vs TCAS II?
+A: TCAS I: traffic info only (TAs), range and bearing, altitude if Mode C. TCAS II: TAs plus RAs with vertical-plane avoidance manoeuvres.
+Q: How does TCAS work?
+A: Secondary radar principle, air to air, on 1030/1090 MHz. Creates two 3D protective bubbles. Requires intruder to have a working transponder (min Mode A).
+QN: TA and RA timings and symbols?
+A: TA: 45-35 seconds to collision, solid amber circle. RA: 30-20 seconds, solid red square.
+T: Amber = Attention (45-35s). Red = React (30-20s).
+QN: Proximate vs other traffic?
+A: Proximate: solid cyan diamond, within +/-1200 ft. Other: hollow cyan diamond, within +/-2700 ft.
+Q: What do you do on a TA? On an RA?
+A: TA: visually search. RA: immediately manoeuvre as required, adjust path/power/trim, inform ATC ASAP of any deviation from clearance.
+Q: Do RAs give horizontal manoeuvre advice?
+A: No - RAs are vertical-plane only.
+Q: Can TCAS see an aircraft with its transponder off?
+A: No. It is invisible to TCAS.
+
+# 10. GPWS / EGPWS
+== What is GPWS?
+A central computer taking inputs on **configuration, height/altitude, and ILS glideslope deviation**. It detects dangerous situations - the **six (original) modes**:
+1. Excessive rate of descent
+2. Excessive terrain closure rate
+3. Height loss after take-off
+4. Flaps or gear not selected for landing
+5. Too low on the ILS glide slope
+6. Descending below approach minima
+== EGPWS upgrades
+Adds **GPS position + terrain database** -> a **look-ahead** capability. GPWS has "one serious flaw": it can only monitor the ground **directly beneath** the aircraft, so a sudden steep terrain change might not give enough warning.
+Terrain can be displayed on the nav display using the weather system. **Windshear warnings** (visual+aural) too.
+GPWS vs EGPWS:
+- Terrain DB: GPWS none / EGPWS yes (look-ahead).
+- Mode 5: GPWS one glide-slope alert / EGPWS **5A soft alert at 1.3 dots**, **5B hard alert at 2.5 dots**.
+- Mode 6: GPWS decision height only / EGPWS **6A decision height, 6B bank angle alert**.
+- Mode 7: GPWS none / EGPWS **windshear**.
+- GPWS: terrain below only / EGPWS: below **and ahead**.
+Weakness: EGPWS is only as good as its database - must be **current and accurate**.
+== Priority of warnings
+Windshear > GPWS > TCAS. Mnemonic **SWAGAT**: Stall, Windshear, GPWS, TCAS (priority order).
+Q: What is GPWS and what modes does it have?
+A: Central computer using configuration, height and ILS glide slope data to detect: 1 excessive descent rate, 2 excessive terrain closure rate, 3 height loss after take-off, 4 flaps/gear not set for landing, 5 too low on glide slope, 6 descending below minima.
+Q: GPWS vs EGPWS?
+A: EGPWS adds GPS + terrain database for look-ahead terrain warning. Mode 5A (1.3 dots soft) & 5B (2.5 dots hard), Mode 6A decision height & 6B bank angle, Mode 7 windshear. GPWS only sees terrain below the aircraft.
+T: GPWS = looks down. EGPWS = looks down + ahead (database + GPS).
+Q: What's the weakness of EGPWS?
+A: It's only as good as its terrain database - must be up to date and accurate.
+Q: Order of priority: windshear, GPWS, TCAS?
+A: Windshear first, GPWS second, TCAS third. Including stall: Stall > Windshear > GPWS > TCAS ("SWAGAT").

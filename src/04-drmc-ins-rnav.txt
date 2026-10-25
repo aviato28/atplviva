@@ -1,0 +1,86 @@
+# 11. DRMC & Gyroscopes
+== Direct Reading Magnetic Compass: 3 requirements
+**H**orizontal, **S**ensitive, **A**periodic (dead-beat). Think "HSA".
+== Compass errors
+**Turning errors**: MAX when turning through **north and south**, ZERO when turning through **east and west**.
+**Acceleration errors**: ZERO on N/S headings, MAX on **090M and 270M**.
+- Acceleration -> apparent turn towards the **nearer pole**.
+- Deceleration -> apparent turn towards the **further pole**.
+T: ANDS - Accelerate North (turn toward nearer pole), Decelerate South. And the max-error headings are E/W for acceleration, N/S for turning.
+== Gyroscope basics
+A **gyroscope**: a body (usually a rotor/wheel) spinning freely in one or more directions, with the properties of **rigidity** and **precession**. **Gimbal rings** support the rotor.
+**Rigidity**: a spinning rotor keeps its axis pointing in a fixed direction in space unless acted on by an external force.
+**Precession**: if an external force tries to tilt the axis, the gyro moves in a plane **at 90 degrees** to the applied torque.
+== The maths you can quote
+Rigidity (gyroscopic inertia) is proportional to **I x omega**, where I = moment of inertia (= m r^2) and omega = angular velocity. Heavier, bigger-radius, faster spin = more rigid.
+Rate of precession is **proportional to the torque applied** and **inversely proportional to I x omega** (the more rigid, the slower it precesses).
+== Wander
+Axis departs from its chosen direction = **wander**. Wander in the **horizontal** plane = **drift**. Wander in the **vertical** plane = **topple**.
+Q: Three requirements of a DRMC?
+A: Horizontal, sensitive, aperiodic.
+Q: Where are compass turning errors greatest?
+A: Maximum when turning through north and south; zero turning through east and west.
+Q: Compass acceleration errors?
+A: Zero on N/S headings, max on 090/270 M. Acceleration causes apparent turn toward the nearer pole; deceleration toward the further pole.
+Q: What is a gyroscope? Its two fundamental properties?
+A: A freely rotating body (rotor) in one or more directions, with rigidity (axis stays fixed in space) and precession (movement at 90 degrees to applied force).
+Q: What affects rigidity and precession rate?
+A: Rigidity is proportional to I x omega (moment of inertia x angular velocity). Precession rate is proportional to torque and inversely proportional to I x omega.
+Q: Define wander, drift and topple.
+A: Wander: axis departs from its chosen direction. Drift: wander in the horizontal plane. Topple: wander in the vertical plane.
+
+# 12. INS & IRS
+== INS: the idea
+A **self-contained** nav aid: senses **acceleration** and **integrates it twice** - once to get **velocity**, again to get **distance**.
+Parts: **Inertial Sensor System (ISS)** = stable platform with high-quality **gyros + accelerometers** + a computer that does the integration.
+Gyro type: an **integrating gyroscope** - one degree of freedom, with **viscous** (not spring) restraint.
+INS errors fall into 3 groups: **bounded, unbounded, inherent**.
+== IRS: the modern version
+The **Inertial Reference Unit (IRU)** is the heart of the **IRS**. Sources: **three laser gyros + three accelerometers**. The only other inputs: **initial position, baro altitude, and TAS**.
+**Laser gyro (RLG)**: measures rotation by comparing two laser beams sent in **opposite directions** around a very narrow tunnel - uses the properties of light.
+Laser = Light Amplification by Stimulated Emission of Radiation.
+== INS vs IRS (a classic viva table)
+- Gyros: INS conventional / IRS ring laser gyros.
+- Mounting: INS on a **pendulous (gimballed) platform** / IRS **strapdown** - fixed to the aircraft structure.
+- Accuracy: INS less accurate / IRS **0.5 to 2 nm/hr**.
+- Alignment time (mid-latitudes): INS **~20 min** / IRS **3-10 min**.
+- Life: IRS longer life.
+- IRS disadvantage: **laser lock** (beams lock at low rotation rates). Fix: **dither motor** that vibrates the gyro to break the lock.
+Q: What is the principle of INS?
+A: Self-contained system; senses acceleration and integrates it twice - first to velocity, then to distance.
+Q: What are the components of an INS?
+A: Inertial sensor system: stable platform with high-quality gyros and accelerometers, plus a computer that integrates accelerometer outputs.
+Q: What are INS errors classed as?
+A: Bounded, unbounded and inherent errors.
+Q: What inputs does the IRS need?
+A: Its own internal sensors (3 laser gyros, 3 accelerometers) plus initial position, barometric altitude and TAS.
+Q: How does a ring laser gyro work?
+A: Two laser beams are sent in opposite directions around a narrow tunnel; rotation changes the relative beam behaviour, and comparing them measures the rotation.
+QN: INS vs IRS?
+A: INS: conventional gyros, pendulous platform, less accurate, ~20 min alignment. IRS: ring laser gyros, strapdown, 0.5-2 nm/hr accuracy, 3-10 min alignment, longer life. IRS drawback: laser lock, cured by a dither motor.
+Q: What is laser lock and how is it avoided?
+A: At very low rotation rates the two beams "lock" to the same frequency so rotation isn't detected. A dither motor vibrates the gyro to open the lock.
+
+# 13. RNAV & SLOP
+== What is RNAV?
+Any system that lets you navigate to the required accuracy **without flying directly over ground-based facilities**.
+Benefits: shorter distance, flight time and fuel/cost; more route capacity; reduced vertical and horizontal separation.
+== Types and levels
+**B-RNAV**: within **5 nm** on 95% of occasions. **P-RNAV**: within **1.0 nm** on 95%. P-RNAV is being established in terminal airspace.
+**2D** = horizontal only. **3D** = adds vertical guidance. **4D** = adds time (arrival timing).
+Simple 2D RNAV uses **rho/theta** from VOR/DME. Modern aircraft use the **FMC** for 4D: lat, long, altitude, time. It optimises for the most economical flight.
+== How the FMC finds position
+Inputs: position and heading from the **IRS** + radio fixes via **twin DME**. The FMC compares them via **Kalman filtering** to produce a system position. It blends the IRS **short-term accuracy** with the radio aid's **long-term accuracy**.
+== SLOP: Strategic Lateral Offset Procedure
+Aircraft fly a small offset (normally to the **right**) of the airway/route centreline, so a collision with opposite-direction traffic becomes unlikely.
+Why: higher navigation accuracy means aircraft fly almost exactly on the centreline - so if a **height error** occurs, the chance of collision is much higher. SLOP deliberately spreads aircraft sideways.
+Q: What is RNAV and its benefits?
+A: Navigation to required accuracy without needing to fly over ground facilities. Reduces distance, time and fuel; increases route capacity; allows reduced separation.
+QN: B-RNAV vs P-RNAV?
+A: B-RNAV: 5 nm accuracy 95% of the time. P-RNAV: 1.0 nm 95% of the time (terminal airspace).
+Q: 2D, 3D, 4D RNAV?
+A: 2D horizontal only; 3D adds vertical guidance; 4D adds time.
+Q: How does the FMC compute position?
+A: Combines IRS position/heading with radio fixing (twin DME) using Kalman filtering - IRS short-term accuracy with radio long-term accuracy.
+Q: What is SLOP and why do we need it?
+A: Strategic Lateral Offset Procedure - offset the route centreline (normally to the right) so opposite-direction traffic doesn't line up. Needed because high nav accuracy puts aircraft exactly on centreline, making an altitude deviation far more likely to cause a collision.

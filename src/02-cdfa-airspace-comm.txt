@@ -1,0 +1,159 @@
+# 3. CANPA / CDFA
+== The problem with old-style NPAs
+Old non-precision approaches had **step-down fixes** inside the FAF. Flying them level-by-level means lots of thrust, pitch and altitude changes at low height = **high workload and error risk** in a critical phase.
+Even without step-downs, the old way was "dive to MDA, then fly level at MDA until the runway appears or you reach the MAP" - a *dive-and-drive*.
+== The fix: CANPA / CDFA
+**CANPA** = Constant Angle Non-Precision Approach: fly a **stabilised constant-angle descent** even without a glide slope or VASI/PAPI.
+**CDFA** = Continuous Descent Final Approach: continuous descent, **no level-off**, from at/above the FAF to about **15 m (50 ft) above the landing threshold**.
+At the MDA you only have two options: **(1) continue below MDA with required visual reference, or (2) go around.** No level segment.
+== Stabilised approach
+Key to safe approach and landing; DGCA requires it to help eliminate **CFIT**.
+Stable approach speed, descent rate, vertical flight path and configuration to the touchdown point. Leave the FAF **configured for landing**, on speed, power and flight path *before* descending below the minimum stabilised approach height.
+== Advantages of CDFA (list of 5)
+(a) Increased safety through stabilised approach. (b) Better situational awareness, lower workload. (c) Fuel efficiency - less low-level flight. (d) Lower noise - less time level at high thrust. (e) Reduced CFIT.
+== Numbers
+Optimum VDA (vertical descent angle) = **3.0 degrees**, calculated from FAF altitude to threshold crossing height (TCH).
+Max VDA: **4.5 deg for Cat A/B**, **3.77 deg for Cat C/D**.
+**Derived Decision Altitude (DDA)**: crew add an increment (min **50 ft**, depends on type) to the MDA to decide where to start the missed approach so they don't *descend below MDA* during the go-around transition.
+If NOT CDFA: visibility penalty **200 m (A/B)**, **400 m (C/D)**.
+Q: What is CANPA?
+A: Constant Angle Non-Precision Approach - a stabilised constant-angle descent flown even when no glide slope or VASI/PAPI exists, instead of diving to MDA and levelling off.
+Q: Define CDFA.
+A: A technique, consistent with stabilised approach, for flying the final approach segment of an NPA as a continuous descent without level-off, from at/above the FAF to about 15 m (50 ft) above the landing threshold.
+Q: What are the advantages of CDFA?
+A: Safer (stabilised approach), better situational awareness and less workload, fuel saving, less noise, reduced CFIT.
+T: S-S-F-N-C: Safety, Situational awareness, Fuel, Noise, CFIT.
+QN: What's the optimum VDA and the maximum?
+A: Optimum 3.0 deg. Max 4.5 deg for Cat A/B, 3.77 deg for Cat C/D. VDA is from FAF altitude to TCH.
+Q: What is DDA?
+A: Derived Decision Altitude - MDA plus a prescribed increment (min 50 ft, depending on aircraft type) at which the missed approach is initiated, so the aircraft doesn't descend below MDA.
+Q: At MDA in a CDFA, what are your options?
+A: Only two: continue below MDA to land with required visual reference, or go around. No level flight.
+Q: What is a stabilised approach?
+A: Maintaining stable approach speed, descent rate, vertical flight path and configuration to the touchdown point; configured for landing and on speed/power/path before descending below the minimum stabilised approach height. Required by DGCA to eliminate CFIT.
+Q: What is TCH?
+A: Threshold Crossing Height - the height of the effective visual glide path over the threshold.
+Q: Domestic routes on Jeppesen enroute chart?
+A: H, V, J, W are domestic routes; the "HV" ones are one-way routes.
+
+# 4. Airspaces
+== Seven classes - the ladder of service
+Think of it as a ladder from "strictest control" (A) to "you're on your own" (G).
+**A**: IFR only. All flights get ATC and are separated from each other.
+**B**: IFR + VFR. All get ATC, all separated from each other.
+**C**: IFR + VFR. All get ATC. IFR separated from IFR *and* VFR. VFR separated from IFR only, gets traffic info on other VFR.
+**D**: IFR + VFR, all get ATC. IFR separated from IFR, gets traffic info on VFR. VFR gets traffic info on ALL.
+**E**: IFR + VFR. ATC to IFR only; IFR separated from IFR. Traffic info to all *as far as practical*. **Not used for control zones.**
+**F**: IFR + VFR. IFR get advisory service; all get flight information service if requested.
+**G**: IFR + VFR. Flight information service if requested.
+Memory: A "Alone IFR", then separation drops: A,B all separated -> C: IFR sep from all -> D: IFR sep from IFR only -> E: IFR controlled only -> F: advisory -> G: info only.
+== Who gets ATC service?
+(a) All IFR in classes A, B, C, D, E. (b) All VFR in B, C, D. (c) All special VFR. (e) All aerodrome traffic at controlled aerodromes.
+== Other rules
+**OCA**: airspace above **FL55** over oceans (e.g. North Atlantic) is designated oceanic control area with strict rules and special navigation procedures.
+**SVFR**: any airspace class that supports a CTR permits SVFR.
+**Non-radio**: classes **E-G** allow VFR traffic without VHF two-way radio.
+**Speed limit**: **250 kt IAS** for VFR in class C and all traffic in D-G, **below 10 000 ft (FL100)** only.
+== India specifics
+India uses ATS airspace classes **D, E, F, G** (per NOTAM G 0066/99). Delhi and Mumbai are Class D.
+D vs E in India: in D, traffic info is given for all IFR & VFR; in E, traffic info only where possible.
+== Holding speeds (ICAO max)
+Up to 14 000 ft: **230 kt** | 14 000-20 000: **240 kt** | 20 000-34 000: **265 kt** | Above 34 000: **M0.83**.
+Approach plate chart numbering: ILS = 11-1, VOR = 13-1, NDB = 16-1 (second airport in the same city, e.g. Bangalore: ILS 21-1, VOR 23-1).
+IAS switches to Mach at **FL270**.
+Q: Describe Class A to G in one line each.
+A: A: IFR only, all separated. B: IFR+VFR, all separated. C: IFR+VFR, IFR separated from all, VFR from IFR only. D: IFR+VFR, IFR sep from IFR; traffic info on VFR; VFR gets traffic info on all. E: IFR controlled/separated from IFR, traffic info to all where practical, not for CTRs. F: advisory to IFR, FIS on request. G: FIS on request.
+T: A = Absolute control; G = Go-your-own-way. Each step down loses some separation service.
+Q: Which airspace classes are used in India?
+A: D, E, F and G (NOTAM G 0066/99). Delhi and Mumbai are Class D.
+Q: Difference between Class D and E in India?
+A: D: traffic info for all IFR and VFR. E: traffic info only where possible.
+Q: Which airspaces provide ATC service?
+A: IFR in A-E, VFR in B-D, all special VFR, all aerodrome traffic at controlled aerodromes.
+QN: Speed limit in airspace?
+A: 250 kt IAS for VFR in class C and all traffic in D-G, applicable only below 10 000 ft (FL100).
+Q: Which classes allow VFR without two-way VHF radio?
+A: Classes E to G.
+QN: What is an OCA and where does it start?
+A: Oceanic Control Area - airspace above FL55 over oceans, with strict rules and special navigation procedures.
+QN: ICAO maximum holding speeds?
+A: Up to 14 000 ft: 230 kt. 14 000-20 000: 240 kt. 20 000-34 000: 265 kt. Above 34 000: M0.83.
+T: 230 - 240 - 265 - M0.83: rises 10, then 25, then switches to Mach.
+Q: What is the chart code for ILS, VOR and NDB on approach plates?
+A: ILS 11-1, VOR 13-1, NDB 16-1. For a second airport in the same city: ILS 21-1, VOR 23-1.
+QN: At what level does IAS change to Mach?
+A: FL270.
+Q: Can Class E be used for control zones?
+A: No.
+
+# 5. Communication Failure
+== First reaction
+Try to re-establish contact with the appropriate ATC unit using **all other available means**. Where **CPDLC** exists, voice communication must still be maintained.
+How ATC confirms comm failure: asks you to do a **specific manoeuvre observable on radar**, or **transmit a signal** to acknowledge. ATC also transmits **blind** on frequencies where you're believed to be listening.
+Squawk **7600** = radio failure.
+== In VMC (whatever your flight rules)
+Continue in VMC, land at the **nearest suitable aerodrome**, report arrival by the most expeditious means. If advisable, you may complete the IFR flight.
+== In IMC - the timeline
+**Non-radar airspace**: maintain last assigned speed and level (or minimum flight altitude if higher) for **20 minutes** after failing to report over a compulsory reporting point, then adjust to the filed flight plan.
+**Radar airspace**: maintain last assigned speed/level (or MFA if higher) for **7 minutes** after the *latest of*:
+- (a) the last assigned level/MFA reached, or
+- (b) transponder set to **7600**, or
+- (c) failure to report over a compulsory reporting point.
+Then adjust to the filed flight plan.
+**Descent**: start at the nav aid/fix at or as close as possible to the **expected approach time (EAT)** last received and acknowledged; if none, at the **ETA from the current flight plan**.
+**Landing**: if possible, within **30 minutes after the ETA**.
+Q: What do you do on communications failure?
+A: Try all other means to contact ATC; keep voice comms where CPDLC exists. Squawk 7600. Then follow VMC/IMC procedures.
+Q: Comm failure in VMC?
+A: Continue in VMC, land at the nearest suitable aerodrome, report arrival to ATC by the quickest means. May complete IFR flight if considered advisable.
+QN: Comm failure in IMC - how long do you hold last assigned speed/level?
+A: Non-radar: 20 minutes after missing a compulsory report point. Radar: 7 minutes after the latest of: reaching last assigned level, setting 7600, or missing a compulsory report. Then follow filed flight plan.
+T: 20 for nothing, 7 for radar - "Radar = 7, Rest = 20".
+Q: When do you start descent for approach after comm failure in IMC?
+A: At the nav aid/fix at or close to the last acknowledged EAT; if none, at or close to ETA from the current flight plan. Land if possible within 30 min of ETA.
+Q: How does ATC confirm a comm failure?
+A: By asking you to perform a manoeuvre visible on radar or send a signal acknowledging; ATC also transmits blind instructions.
+
+# 6. EDTO
+== From ETOPS to EDTO
+**ETOPS** originally let twin-engine aircraft fly routes previously restricted to 3-4 engine types, with a very high safety level. It became **EDTO (Extended Diversion Time Operations)** and covers **two or more engines**. The intent: **avoid a diversion, and if one happens, make sure it is safe.**
+**EDTO definition**: any operation by an aeroplane with two or more turbine engines where diversion time to an en-route alternate is **greater than the threshold time** set by DGCA.
+Needs DGCA approval for aeroplanes with 2+ engines or AUW > 5700 kg beyond the threshold.
+== Key terms
+**EDTO entry point**: first point on the route of an EDTO flight, found using the one-engine-inoperative cruise speed beyond the threshold from an en-route alternate.
+**EDTO critical fuel**: fuel to fly to an en-route alternate considering, at the most critical point, the most limiting system failure (engine failure, decompression, or both).
+**Maximum diversion time**: max allowable range, expressed in time, from a point on a route to an en-route alternate.
+**Threshold time**: range (in time) to an en-route alternate beyond which EDTO approval is required.
+Take-off and/or destination aerodromes may be treated as en-route alternates.
+== DGCA threshold times
+- **60 min**: twin-engine aeroplanes over **45 360 kg**, and all scheduled operators with twins regardless of weight/pax.
+- **90 min**: non-scheduled operators with aeroplanes under 45 360 kg.
+- **120 min**: aeroplanes with more than two engines.
+== Critical fuel scenarios - take the GREATER of 3
+a. **Rapid decompression** at the most critical point, descent to a safe altitude (oxygen limits).
+b. Decompression **+ simultaneous engine failure** at the most critical point, at approved OEI cruise speed.
+c. **Engine failure** at the most critical point, descent to OEI cruise altitude at OEI cruise speed.
+== Approval experience ladder
+**75/90 min**: can be granted with minimal or no in-service experience with the airframe-engine combination.
+**Up to 120 min**: min **12 consecutive months** in-service experience with that airframe-engine combination.
+**Up to 180 min**: must have held 120 min EDTO approval for at least **12 months** with high demonstrated propulsion reliability.
+== Adequate vs suitable
+**Adequate airfield**: long enough runway, sufficiently equipped - ATC, lighting, comms, weather reporting, navaids, safety cover available at time of use.
+**Suitable airfield**: commander satisfies himself on the day, using operator criteria, that adequate airfields - considering weather and equipment unserviceabilities - are suitable for the intended operation.
+T: Adequate = on paper (facilities). Suitable = on the day (weather + serviceability).
+Q: What is EDTO?
+A: Extended Diversion Time Operations - any operation by an aeroplane with two or more turbine engines where the diversion time to an en-route alternate exceeds the DGCA threshold time.
+Q: How has ETOPS evolved to EDTO?
+A: ETOPS was for twins on routes previously for 3-4 engine aircraft. EDTO covers two or more engines. Intent: avoid diversion, and ensure a safe one if it happens.
+QN: DGCA threshold times?
+A: 60 min - twins above 45 360 kg and all scheduled-operator twins. 90 min - non-scheduled under 45 360 kg. 120 min - more than two engines.
+Q: What is EDTO critical fuel?
+A: Fuel needed to reach an en-route alternate considering the most limiting system failure (engine failure, decompression or both) at the most critical point. Take the greatest of: decompression; decompression + engine failure; engine failure.
+Q: Adequate vs suitable airfield?
+A: Adequate: long enough runway and necessary ancillary services (ATC, lighting, comms, weather, navaids, rescue). Suitable: on the day, commander confirms adequate aerodromes are suitable given weather and equipment unserviceabilities.
+QN: Experience required for 120 and 180 min EDTO?
+A: 120 min: 12 consecutive months in-service with that airframe-engine. 180 min: 12 months holding a 120 min approval with high propulsion reliability. 75/90 min: minimal or no experience needed.
+Q: Can take-off or destination be used as en-route alternates for EDTO?
+A: Yes.
+Q: What is EDTO entry point?
+A: The first point on an EDTO route, determined using OEI cruise speed, beyond the threshold time from an en-route alternate.

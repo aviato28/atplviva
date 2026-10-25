@@ -1,0 +1,142 @@
+# 1. ACARS
+== The big idea
+ACARS = **A**ircraft **C**ommunications **A**ddressing and **R**eporting **S**ystem. Think of it as *text messaging between your aircraft and the ground*, plus flight tracking.
+It's a digital data link for SHORT messages, carried over **VHF, HF or SATCOM**.
+Why it matters: after an accident, ACARS data is often the best clue to the aircraft's **last known position** for search and rescue.
+== What does it actually do? (3 jobs)
+**a.** Automatically detects and reports changes in flight phase (OOOI-style: gate, taxi, takeoff, landing...).
+**b.** Talks to the FMS: flight plans and weather come down from the ground station straight into the FMS.
+**c.** Sends real-time aircraft system / sensor / maintenance-fault data to the ground.
+== Compliance rules (examiners love these)
+- If ACARS is unavailable/disabled -> operator must ensure real-time tracking using **ADS-B**.
+- Operator must ensure ACARS/ADS-B are fully functional **before every departure**.
+- Crew are strictly instructed **never to switch it off in flight**.
+- Where there is no ACARS/ADS-B coverage, operator devises a tracking procedure; crew report **coordinates, speed and altitude at intervals not exceeding 15 minutes**.
+== How it works technically
+ACARS sends telex-format data at only **2.4 kbps** over VHF; messages were originally printed in the cockpit.
+Early 1990s: extended to **SATCOM** (geostationary satellites). 2001: extended to **HF**, closing the polar gap.
+Being replaced by **VDL Mode 2** (31.5 kbps = 10x+ capacity).
+Q: What is ACARS and what are its major functions?
+A: Aircraft Communications Addressing and Reporting System - a digital data link for short messages between aircraft and ground via VHF/HF/SATCOM, also used for flight tracking.
+Functions: (1) auto-detect and report flight phase changes, (2) interface with FMS for flight plan / weather uplink, (3) real-time reporting of aircraft systems, sensors and maintenance faults.
+T: Phase changes, FMS link, system health = "Where am I, what's my plan, how am I feeling".
+Q: Why is ACARS data so important after an accident?
+A: It helps locate the aircraft's last position so search and rescue can be launched.
+Q: What if ACARS is unavailable or disabled?
+A: Operator must ensure real-time flight tracking using ADS-B.
+Q: When must ACARS/ADS-B be checked, and can the crew switch it off?
+A: Fully functional before EVERY departure. Crew must NOT switch it off during flight.
+QN: Where there's no ACARS/ADS-B coverage, how often must the crew report position?
+A: Coordinates, speed and altitude at intervals not exceeding 15 minutes.
+QN: What is the data rate of ACARS vs VDL Mode 2?
+A: ACARS 2.4 kbps (VHF, telex format). VDL Mode 2 is 31.5 kbps - more than 10x the capacity.
+Q: How did ACARS coverage grow over time?
+A: VHF first -> early 1990s SATCOM (geostationary) for beyond-VHF -> 2001 HF to cover polar regions.
+
+# 2. All Weather Operations (AWO)
+== Why do minima exist?
+Aerodrome Operating Minima (AOM) exist to keep aeroplane operations safe at an aerodrome by **limiting operations in specified weather**.
+They define when an aerodrome is *usable*:
+- **Take-off**: RVR and/or visibility (+ cloud if needed).
+- **2D landing (non-precision, lateral guidance only)**: visibility/RVR, **MDA/H**, cloud if needed.
+- **3D landing (lateral + vertical guidance)**: visibility/RVR and **DA/H** for the type/category.
+== Vocabulary you must be able to define
+**All weather operations**: any taxi, take-off, departure, approach or landing where visual reference is limited by weather.
+**Alert height**: height above the runway threshold (based on aircraft + fail-operational system) above which a Cat III approach is *discontinued and a go-around started* if a redundant part of the landing system or ground equipment fails.
+**Approach ban point**: point on final where reported weather must meet minima to continue the approach.
+**Ceiling**: height of the base of the lowest cloud layer *below 6000 m (20 000 ft)* covering **more than half the sky**.
+**DA/DH**: in a 3D approach, the height at which a missed approach MUST start if you don't have the required visual reference.
+**MDA/MDH**: in a 2D / circling approach, the height below which you must NOT descend without visual reference.
+**Fail-operational**: if a failure occurs, the approach, flare and landing can still be completed by the remaining automatic system.
+**RVR**: the range over which a pilot on the runway centreline can see the surface markings or lights delineating the runway/centreline.
+**Visibility (aeronautical)**: the GREATER of (a) the distance a black object near the ground is seen against a bright background, or (b) the distance 1000-candela lights are seen against an unlit background.
+**Flight visibility** = forward from the cockpit. **Ground visibility** = reported by observer/automatic systems.
+**LVP** = procedures at an aerodrome for Cat II/III approaches and low-vis take-offs. **LVTO** = take-off with RVR < 400 m.
+**GBAS** = ground-based augmentation (info from a ground transmitter). **GLS** = approach based on GBAS.
+== Aircraft categories (by Vat)
+Vat = **1.3 x Vso** or **1.23 x Vs1g**, whichever is higher, in landing config at max certificated landing mass.
+Cat A < 91 kt | Cat B 91-120 | Cat C 121-140 | Cat D 141-165 | Cat E 166-210 kt.
+Memory: A-B-C-D-E go up by about 30, 20, 25... just remember 91 / 121 / 141 / 166 / 211.
+== The approach types and Cat I/II/III
+**Type A**: MDH or DH at/above **75 m (250 ft)**. **Type B**: DH below 75 m (250 ft).
+Type B is split:
+- **Cat I**: DH not lower than **60 m (200 ft)**; visibility not less than **800 m** or RVR not less than **550 m**.
+- **Cat II**: DH lower than 60 m (200 ft) but not lower than **30 m (100 ft)**; RVR not less than **300 m**.
+- **Cat IIIA**: DH lower than 30 m (100 ft) or no DH; RVR not less than **175 m**.
+- **Cat IIIB**: DH lower than 15 m (50 ft) or no DH; RVR less than 175 m but not less than **50 m**.
+- **Cat IIIC**: no DH and no RVR limits (full "zero-zero").
+**NPA** = 2D, Type A only. **Precision approach** = based on ILS, MLS, GLS, SBAS Cat I; 3D, Type A or B.
+== ILS critical vs sensitive area
+**Critical area**: defined zone where vehicles AND aircraft are *excluded* during all ILS ops - their presence causes unacceptable signal disturbance.
+**Sensitive area**: extends *beyond* the critical area; parking/movement is *controlled* to prevent interference.
+Runway holding position protects the runway or ILS critical/sensitive area.
+Trick: Critical = Closed to everyone. Sensitive = Supervised.
+== Normal vs Restricted AOM (India)
+Two sets: **Normal AOM** (scheduled operators) and **Restricted AOM** (additives to normal).
+Restricted applies to: (a) non-scheduled and GA operators not authorised normal AOM; (b) PICs until they have **100 hours command experience on type**.
+Restricted AOM = Normal DA(H)/MDA(H) **+100 ft** and visibility/RVR **+400 m**.
+Normal AOM for non-scheduled/GA operators requires: PIC and co-pilot each **200 hrs on type**, **10 hrs on type in last 90 days**, and training on a simulator of minimum **Level C**.
+== Approach ban policy (VERY commonly asked)
+1. PIC must NOT *commence* an instrument approach if reported RVR/vis is below applicable minimum.
+2. If after commencing, RVR/vis falls below minimum, you may not continue **below 1000 ft above the aerodrome** or **into the final approach segment**.
+3. If RVR unavailable, it can be derived by converting visibility.
+4. BUT if you're already in the final approach segment or below 1000 ft when it drops, you **may continue to DA/H or MDA/H**.
+5. You may continue below DA/H or MDA/H and land provided **required visual reference is established at DA/H/MDA/H and maintained**.
+6. **Touchdown zone RVR is ALWAYS controlling.** Mid-point and stop-end RVR are controlling if reported and relevant.
+== Non-precision approaches and visibility conversion
+All NPAs flown using **CDFA** unless DGCA approves otherwise.
+If NOT flown as CDFA: increase RVR by **200 m for Cat A/B** and **400 m for Cat C/D**, as long as result does not exceed **5000 m**.
+Met-vis to RVR/CMV conversion must NOT be used: (a) for take-off, (b) for any required RVR minimum below 800 m, (c) for visual/circling approaches, (d) when reported RVR is available.
+== Low visibility ops - requirements
+No Cat II/III unless: (a) aircraft certified for DH below 200 ft / no DH and equipped; (b) DGCA approval; (c) a system for recording approach/auto-land success and failure; (d) **at least two pilots**; (e) DH determined by a **radio altimeter**.
+LVTO: no take-off below **400 m RVR** unless DGCA approves. Scheduled operators may get LVTO minima down to **125 m**, requiring **90 m visual segment** from the cockpit at start of roll. Non-scheduled/GA: no take-off below **500 m**.
+Aerodrome itself must be approved for Cat II/III.
+**Special VFR is NOT permitted for commercial air transport aeroplanes.**
+== Visual approach minima
+Use the higher of the NPA minima or minimum vis/RVR of **2800 m (Cat A/B)**, **3200 m (Cat C)**, **3600 m (Cat D)**.
+If the runway only has a circling approach and visual approach is requested, ground visibility must be at least **5 km**.
+Q: Why do Aerodrome Operating Minima exist?
+A: To ensure the desired level of safety by limiting operations at an aerodrome in specified weather conditions.
+Q: Define DA/DH vs MDA/MDH.
+A: DA/DH - in a 3D approach, the point where a missed approach must be started if required visual reference isn't established. MDA/MDH - in a 2D/NPA/circling approach, the altitude/height below which descent must not be made without required visual reference.
+T: Decision = Dive-down-or-go (3D). Minimum = Must-not-go-below (2D).
+Q: How are aircraft categories A-E defined?
+A: By Vat = 1.3 Vso or 1.23 Vs1g (whichever is higher) in landing configuration at max landing mass. A <91, B 91-120, C 121-140, D 141-165, E 166-210 kt IAS.
+QN: Give the Cat I, II, IIIA, IIIB, IIIC definitions.
+A: Cat I: DH >= 200 ft, vis >= 800 m or RVR >= 550 m.
+Cat II: DH < 200 ft but >= 100 ft, RVR >= 300 m.
+Cat IIIA: DH < 100 ft or no DH, RVR >= 175 m.
+Cat IIIB: DH < 50 ft or no DH, RVR < 175 m but >= 50 m.
+Cat IIIC: no DH, no RVR limit.
+Q: What's the difference between Type A and Type B approach operations?
+A: Type A: MDH or DH at or above 250 ft (75 m). Type B: DH below 250 ft (75 m) - Type B is subdivided into Cat I, II, III.
+Q: What is alert height?
+A: A height above the runway threshold, based on aircraft characteristics and its fail-operational landing system, above which a Cat III approach would be discontinued and a missed approach started if a failure occurred in a redundant part of the landing system or ground equipment.
+Q: Define ceiling.
+A: Height above ground/water of the base of the lowest cloud layer below 6000 m (20 000 ft) covering more than half the sky.
+Q: Define RVR.
+A: The range over which the pilot of an aircraft on the runway centreline can see the runway surface markings or the lights delineating the runway or identifying its centreline.
+Q: What is aeronautical visibility?
+A: The GREATER of (a) greatest distance a black object of suitable size near the ground can be seen against a bright background, and (b) greatest distance 1000-candela lights can be seen and identified against an unlit background.
+Q: ILS critical area vs sensitive area?
+A: Critical area: vehicles including aircraft are EXCLUDED during ILS operations. Sensitive area: extends beyond it; parking/movement is CONTROLLED to prevent interference.
+Q: What is the Approach Ban policy?
+A: Don't commence an approach if RVR/vis is below minimum. If it falls below minimum after commencing, don't continue below 1000 ft AAL or into the final approach segment. But if already in the FAS or below 1000 ft, you may continue to DA/H or MDA/H, and land if visual reference is established there and maintained.
+Q: Which RVR is controlling?
+A: Touchdown zone RVR is always controlling. Mid-point and stop-end RVR are also controlling if reported and relevant.
+Q: What is Restricted AOM and when does it apply?
+A: Normal DA/MDA +100 ft and vis/RVR +400 m. Applies to non-scheduled/GA operators not authorised normal AOM, and to PICs until they have 100 hours command experience on type.
+QN: What experience does a non-scheduled operator need to use Normal AOM?
+A: PIC and co-pilot: min 200 hours on type, min 10 hours on type in the preceding 90 days, plus training including simulator min Level C.
+QN: RVR penalty for flying an NPA without CDFA?
+A: +200 m for Cat A/B, +400 m for Cat C/D, provided result doesn't exceed 5000 m.
+Q: When can you NOT convert met visibility to RVR?
+A: Take-off; any required RVR below 800 m; visual/circling approaches; when reported RVR is available.
+Q: What are the requirements for Cat II/III operations?
+A: Aircraft certified for DH below 200 ft/no DH and equipped; DGCA approval; system to record auto-land success/failure; at least two pilots; DH by radio altimeter; aerodrome approved for Cat II/III.
+QN: Low visibility take-off limits?
+A: LVTO = RVR < 400 m, needs DGCA approval. Scheduled operators down to 125 m (needs 90 m visual segment at start of take-off run). Non-scheduled/GA: not below 500 m.
+Q: Special VFR for commercial air transport?
+A: Not permitted.
+QN: Minimum visibility for a visual approach?
+A: Higher of NPA minima or 2800 m (Cat A/B), 3200 m (Cat C), 3600 m (Cat D). If only a circling approach exists for that runway, ground vis not less than 5 km.
