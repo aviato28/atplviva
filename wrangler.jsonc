@@ -1,0 +1,6 @@
+{
+  "name": "atplviva",
+  "compatibility_date": "2025-01-01",
+  "assets": { "directory": "./" },
+  "routes": [{ "pattern": "aviva.nbansal28.com", "custom_domain": true }]
+}

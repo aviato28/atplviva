@@ -1,0 +1,8 @@
+src
+build.py
+*.pdf
+README.md
+wrangler.jsonc
+.assetsignore
+.git
+node_modules
