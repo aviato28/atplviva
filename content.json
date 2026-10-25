@@ -26,7 +26,8 @@
 {
 "q": "What is ACARS and what are its major functions?",
 "a": "Aircraft Communications Addressing and Reporting System - a digital data link for short messages between aircraft and ground via VHF/HF/SATCOM, also used for flight tracking.\nFunctions: (1) auto-detect and report flight phase changes, (2) interface with FMS for flight plan / weather uplink, (3) real-time reporting of aircraft systems, sensors and maintenance faults.",
-"tip": "Phase changes, FMS link, system health = \"Where am I, what's my plan, how am I feeling\"."
+"tip": "Phase changes, FMS link, system health = \"Where am I, what's my plan, how am I feeling\".",
+"m": 1
 },
 {
 "q": "Why is ACARS data so important after an accident?",
@@ -109,7 +110,8 @@
 {
 "q": "Define DA/DH vs MDA/MDH.",
 "a": "DA/DH - in a 3D approach, the point where a missed approach must be started if required visual reference isn't established. MDA/MDH - in a 2D/NPA/circling approach, the altitude/height below which descent must not be made without required visual reference.",
-"tip": "Decision = Dive-down-or-go (3D). Minimum = Must-not-go-below (2D)."
+"tip": "Decision = Dive-down-or-go (3D). Minimum = Must-not-go-below (2D).",
+"m": 1
 },
 {
 "q": "How are aircraft categories A-E defined?",
@@ -118,7 +120,8 @@
 {
 "q": "Give the Cat I, II, IIIA, IIIB, IIIC definitions.",
 "n": 1,
-"a": "Cat I: DH >= 200 ft, vis >= 800 m or RVR >= 550 m.\nCat II: DH < 200 ft but >= 100 ft, RVR >= 300 m.\nCat IIIA: DH < 100 ft or no DH, RVR >= 175 m.\nCat IIIB: DH < 50 ft or no DH, RVR < 175 m but >= 50 m.\nCat IIIC: no DH, no RVR limit."
+"a": "Cat I: DH >= 200 ft, vis >= 800 m or RVR >= 550 m.\nCat II: DH < 200 ft but >= 100 ft, RVR >= 300 m.\nCat IIIA: DH < 100 ft or no DH, RVR >= 175 m.\nCat IIIB: DH < 50 ft or no DH, RVR < 175 m but >= 50 m.\nCat IIIC: no DH, no RVR limit.",
+"m": 1
 },
 {
 "q": "What's the difference between Type A and Type B approach operations?",
@@ -126,7 +129,8 @@
 },
 {
 "q": "What is alert height?",
-"a": "A height above the runway threshold, based on aircraft characteristics and its fail-operational landing system, above which a Cat III approach would be discontinued and a missed approach started if a failure occurred in a redundant part of the landing system or ground equipment."
+"a": "A height above the runway threshold, based on aircraft characteristics and its fail-operational landing system, above which a Cat III approach would be discontinued and a missed approach started if a failure occurred in a redundant part of the landing system or ground equipment.",
+"m": 1
 },
 {
 "q": "Define ceiling.",
@@ -142,19 +146,23 @@
 },
 {
 "q": "ILS critical area vs sensitive area?",
-"a": "Critical area: vehicles including aircraft are EXCLUDED during ILS operations. Sensitive area: extends beyond it; parking/movement is CONTROLLED to prevent interference."
+"a": "Critical area: vehicles including aircraft are EXCLUDED during ILS operations. Sensitive area: extends beyond it; parking/movement is CONTROLLED to prevent interference.",
+"m": 1
 },
 {
 "q": "What is the Approach Ban policy?",
-"a": "Don't commence an approach if RVR/vis is below minimum. If it falls below minimum after commencing, don't continue below 1000 ft AAL or into the final approach segment. But if already in the FAS or below 1000 ft, you may continue to DA/H or MDA/H, and land if visual reference is established there and maintained."
+"a": "Don't commence an approach if RVR/vis is below minimum. If it falls below minimum after commencing, don't continue below 1000 ft AAL or into the final approach segment. But if already in the FAS or below 1000 ft, you may continue to DA/H or MDA/H, and land if visual reference is established there and maintained.",
+"m": 1
 },
 {
 "q": "Which RVR is controlling?",
-"a": "Touchdown zone RVR is always controlling. Mid-point and stop-end RVR are also controlling if reported and relevant."
+"a": "Touchdown zone RVR is always controlling. Mid-point and stop-end RVR are also controlling if reported and relevant.",
+"m": 1
 },
 {
 "q": "What is Restricted AOM and when does it apply?",
-"a": "Normal DA/MDA +100 ft and vis/RVR +400 m. Applies to non-scheduled/GA operators not authorised normal AOM, and to PICs until they have 100 hours command experience on type."
+"a": "Normal DA/MDA +100 ft and vis/RVR +400 m. Applies to non-scheduled/GA operators not authorised normal AOM, and to PICs until they have 100 hours command experience on type.",
+"m": 1
 },
 {
 "q": "What experience does a non-scheduled operator need to use Normal AOM?",
@@ -172,12 +180,14 @@
 },
 {
 "q": "What are the requirements for Cat II/III operations?",
-"a": "Aircraft certified for DH below 200 ft/no DH and equipped; DGCA approval; system to record auto-land success/failure; at least two pilots; DH by radio altimeter; aerodrome approved for Cat II/III."
+"a": "Aircraft certified for DH below 200 ft/no DH and equipped; DGCA approval; system to record auto-land success/failure; at least two pilots; DH by radio altimeter; aerodrome approved for Cat II/III.",
+"m": 1
 },
 {
 "q": "Low visibility take-off limits?",
 "n": 1,
-"a": "LVTO = RVR < 400 m, needs DGCA approval. Scheduled operators down to 125 m (needs 90 m visual segment at start of take-off run). Non-scheduled/GA: not below 500 m."
+"a": "LVTO = RVR < 400 m, needs DGCA approval. Scheduled operators down to 125 m (needs 90 m visual segment at start of take-off run). Non-scheduled/GA: not below 500 m.",
+"m": 1
 },
 {
 "q": "Special VFR for commercial air transport?",
@@ -222,25 +232,30 @@
 },
 {
 "q": "Define CDFA.",
-"a": "A technique, consistent with stabilised approach, for flying the final approach segment of an NPA as a continuous descent without level-off, from at/above the FAF to about 15 m (50 ft) above the landing threshold."
+"a": "A technique, consistent with stabilised approach, for flying the final approach segment of an NPA as a continuous descent without level-off, from at/above the FAF to about 15 m (50 ft) above the landing threshold.",
+"m": 1
 },
 {
 "q": "What are the advantages of CDFA?",
 "a": "Safer (stabilised approach), better situational awareness and less workload, fuel saving, less noise, reduced CFIT.",
-"tip": "S-S-F-N-C: Safety, Situational awareness, Fuel, Noise, CFIT."
+"tip": "S-S-F-N-C: Safety, Situational awareness, Fuel, Noise, CFIT.",
+"m": 1
 },
 {
 "q": "What's the optimum VDA and the maximum?",
 "n": 1,
-"a": "Optimum 3.0 deg. Max 4.5 deg for Cat A/B, 3.77 deg for Cat C/D. VDA is from FAF altitude to TCH."
+"a": "Optimum 3.0 deg. Max 4.5 deg for Cat A/B, 3.77 deg for Cat C/D. VDA is from FAF altitude to TCH.",
+"m": 1
 },
 {
 "q": "What is DDA?",
-"a": "Derived Decision Altitude - MDA plus a prescribed increment (min 50 ft, depending on aircraft type) at which the missed approach is initiated, so the aircraft doesn't descend below MDA."
+"a": "Derived Decision Altitude - MDA plus a prescribed increment (min 50 ft, depending on aircraft type) at which the missed approach is initiated, so the aircraft doesn't descend below MDA.",
+"m": 1
 },
 {
 "q": "At MDA in a CDFA, what are your options?",
-"a": "Only two: continue below MDA to land with required visual reference, or go around. No level flight."
+"a": "Only two: continue below MDA to land with required visual reference, or go around. No level flight.",
+"m": 1
 },
 {
 "q": "What is a stabilised approach?",
@@ -285,15 +300,18 @@
 {
 "q": "Describe Class A to G in one line each.",
 "a": "A: IFR only, all separated. B: IFR+VFR, all separated. C: IFR+VFR, IFR separated from all, VFR from IFR only. D: IFR+VFR, IFR sep from IFR; traffic info on VFR; VFR gets traffic info on all. E: IFR controlled/separated from IFR, traffic info to all where practical, not for CTRs. F: advisory to IFR, FIS on request. G: FIS on request.",
-"tip": "A = Absolute control; G = Go-your-own-way. Each step down loses some separation service."
+"tip": "A = Absolute control; G = Go-your-own-way. Each step down loses some separation service.",
+"m": 1
 },
 {
 "q": "Which airspace classes are used in India?",
-"a": "D, E, F and G (NOTAM G 0066/99). Delhi and Mumbai are Class D."
+"a": "D, E, F and G (NOTAM G 0066/99). Delhi and Mumbai are Class D.",
+"m": 1
 },
 {
 "q": "Difference between Class D and E in India?",
-"a": "D: traffic info for all IFR and VFR. E: traffic info only where possible."
+"a": "D: traffic info for all IFR and VFR. E: traffic info only where possible.",
+"m": 1
 },
 {
 "q": "Which airspaces provide ATC service?",
@@ -317,7 +335,8 @@
 "q": "ICAO maximum holding speeds?",
 "n": 1,
 "a": "Up to 14 000 ft: 230 kt. 14 000-20 000: 240 kt. 20 000-34 000: 265 kt. Above 34 000: M0.83.",
-"tip": "230 - 240 - 265 - M0.83: rises 10, then 25, then switches to Mach."
+"tip": "230 - 240 - 265 - M0.83: rises 10, then 25, then switches to Mach.",
+"m": 1
 },
 {
 "q": "What is the chart code for ILS, VOR and NDB on approach plates?",
@@ -326,7 +345,8 @@
 {
 "q": "At what level does IAS change to Mach?",
 "n": 1,
-"a": "FL270."
+"a": "FL270.",
+"m": 1
 },
 {
 "q": "Can Class E be used for control zones?",
@@ -358,13 +378,15 @@
 },
 {
 "q": "Comm failure in VMC?",
-"a": "Continue in VMC, land at the nearest suitable aerodrome, report arrival to ATC by the quickest means. May complete IFR flight if considered advisable."
+"a": "Continue in VMC, land at the nearest suitable aerodrome, report arrival to ATC by the quickest means. May complete IFR flight if considered advisable.",
+"m": 1
 },
 {
 "q": "Comm failure in IMC - how long do you hold last assigned speed/level?",
 "n": 1,
 "a": "Non-radar: 20 minutes after missing a compulsory report point. Radar: 7 minutes after the latest of: reaching last assigned level, setting 7600, or missing a compulsory report. Then follow filed flight plan.",
-"tip": "20 for nothing, 7 for radar - \"Radar = 7, Rest = 20\"."
+"tip": "20 for nothing, 7 for radar - \"Radar = 7, Rest = 20\".",
+"m": 1
 },
 {
 "q": "When do you start descent for approach after comm failure in IMC?",
@@ -408,7 +430,8 @@
 "cards": [
 {
 "q": "What is EDTO?",
-"a": "Extended Diversion Time Operations - any operation by an aeroplane with two or more turbine engines where the diversion time to an en-route alternate exceeds the DGCA threshold time."
+"a": "Extended Diversion Time Operations - any operation by an aeroplane with two or more turbine engines where the diversion time to an en-route alternate exceeds the DGCA threshold time.",
+"m": 1
 },
 {
 "q": "How has ETOPS evolved to EDTO?",
@@ -417,15 +440,18 @@
 {
 "q": "DGCA threshold times?",
 "n": 1,
-"a": "60 min - twins above 45 360 kg and all scheduled-operator twins. 90 min - non-scheduled under 45 360 kg. 120 min - more than two engines."
+"a": "60 min - twins above 45 360 kg and all scheduled-operator twins. 90 min - non-scheduled under 45 360 kg. 120 min - more than two engines.",
+"m": 1
 },
 {
 "q": "What is EDTO critical fuel?",
-"a": "Fuel needed to reach an en-route alternate considering the most limiting system failure (engine failure, decompression or both) at the most critical point. Take the greatest of: decompression; decompression + engine failure; engine failure."
+"a": "Fuel needed to reach an en-route alternate considering the most limiting system failure (engine failure, decompression or both) at the most critical point. Take the greatest of: decompression; decompression + engine failure; engine failure.",
+"m": 1
 },
 {
 "q": "Adequate vs suitable airfield?",
-"a": "Adequate: long enough runway and necessary ancillary services (ATC, lighting, comms, weather, navaids, rescue). Suitable: on the day, commander confirms adequate aerodromes are suitable given weather and equipment unserviceabilities."
+"a": "Adequate: long enough runway and necessary ancillary services (ATC, lighting, comms, weather, navaids, rescue). Suitable: on the day, commander confirms adequate aerodromes are suitable given weather and equipment unserviceabilities.",
+"m": 1
 },
 {
 "q": "Experience required for 120 and 180 min EDTO?",
@@ -508,7 +534,8 @@
 "cards": [
 {
 "q": "What is GAGAN?",
-"a": "GPS Aided GEO Augmented Navigation - India's SBAS developed by ISRO and AAI to improve GNSS accuracy, availability and integrity for all phases of flight within the Indian airspace and adjoining areas."
+"a": "GPS Aided GEO Augmented Navigation - India's SBAS developed by ISRO and AAI to improve GNSS accuracy, availability and integrity for all phases of flight within the Indian airspace and adjoining areas.",
+"m": 1
 },
 {
 "q": "What are the GAGAN certification dates and levels?",
@@ -552,7 +579,8 @@
 "cards": [
 {
 "q": "TCAS I vs TCAS II?",
-"a": "TCAS I: traffic info only (TAs), range and bearing, altitude if Mode C. TCAS II: TAs plus RAs with vertical-plane avoidance manoeuvres."
+"a": "TCAS I: traffic info only (TAs), range and bearing, altitude if Mode C. TCAS II: TAs plus RAs with vertical-plane avoidance manoeuvres.",
+"m": 1
 },
 {
 "q": "How does TCAS work?",
@@ -562,7 +590,8 @@
 "q": "TA and RA timings and symbols?",
 "n": 1,
 "a": "TA: 45-35 seconds to collision, solid amber circle. RA: 30-20 seconds, solid red square.",
-"tip": "Amber = Attention (45-35s). Red = React (30-20s)."
+"tip": "Amber = Attention (45-35s). Red = React (30-20s).",
+"m": 1
 },
 {
 "q": "Proximate vs other traffic?",
@@ -571,7 +600,8 @@
 },
 {
 "q": "What do you do on a TA? On an RA?",
-"a": "TA: visually search. RA: immediately manoeuvre as required, adjust path/power/trim, inform ATC ASAP of any deviation from clearance."
+"a": "TA: visually search. RA: immediately manoeuvre as required, adjust path/power/trim, inform ATC ASAP of any deviation from clearance.",
+"m": 1
 },
 {
 "q": "Do RAs give horizontal manoeuvre advice?",
@@ -603,12 +633,14 @@
 "cards": [
 {
 "q": "What is GPWS and what modes does it have?",
-"a": "Central computer using configuration, height and ILS glide slope data to detect: 1 excessive descent rate, 2 excessive terrain closure rate, 3 height loss after take-off, 4 flaps/gear not set for landing, 5 too low on glide slope, 6 descending below minima."
+"a": "Central computer using configuration, height and ILS glide slope data to detect: 1 excessive descent rate, 2 excessive terrain closure rate, 3 height loss after take-off, 4 flaps/gear not set for landing, 5 too low on glide slope, 6 descending below minima.",
+"m": 1
 },
 {
 "q": "GPWS vs EGPWS?",
 "a": "EGPWS adds GPS + terrain database for look-ahead terrain warning. Mode 5A (1.3 dots soft) & 5B (2.5 dots hard), Mode 6A decision height & 6B bank angle, Mode 7 windshear. GPWS only sees terrain below the aircraft.",
-"tip": "GPWS = looks down. EGPWS = looks down + ahead (database + GPS)."
+"tip": "GPWS = looks down. EGPWS = looks down + ahead (database + GPS).",
+"m": 1
 },
 {
 "q": "What's the weakness of EGPWS?",
@@ -616,7 +648,8 @@
 },
 {
 "q": "Order of priority: windshear, GPWS, TCAS?",
-"a": "Windshear first, GPWS second, TCAS third. Including stall: Stall > Windshear > GPWS > TCAS (\"SWAGAT\")."
+"a": "Windshear first, GPWS second, TCAS third. Including stall: Stall > Windshear > GPWS > TCAS (\"SWAGAT\").",
+"m": 1
 }
 ]
 },
@@ -648,7 +681,8 @@
 "cards": [
 {
 "q": "Three requirements of a DRMC?",
-"a": "Horizontal, sensitive, aperiodic."
+"a": "Horizontal, sensitive, aperiodic.",
+"m": 1
 },
 {
 "q": "Where are compass turning errors greatest?",
@@ -656,7 +690,8 @@
 },
 {
 "q": "Compass acceleration errors?",
-"a": "Zero on N/S headings, max on 090/270 M. Acceleration causes apparent turn toward the nearer pole; deceleration toward the further pole."
+"a": "Zero on N/S headings, max on 090/270 M. Acceleration causes apparent turn toward the nearer pole; deceleration toward the further pole.",
+"m": 1
 },
 {
 "q": "What is a gyroscope? Its two fundamental properties?",
@@ -692,7 +727,8 @@
 "cards": [
 {
 "q": "What is the principle of INS?",
-"a": "Self-contained system; senses acceleration and integrates it twice - first to velocity, then to distance."
+"a": "Self-contained system; senses acceleration and integrates it twice - first to velocity, then to distance.",
+"m": 1
 },
 {
 "q": "What are the components of an INS?",
@@ -713,7 +749,8 @@
 {
 "q": "INS vs IRS?",
 "n": 1,
-"a": "INS: conventional gyros, pendulous platform, less accurate, ~20 min alignment. IRS: ring laser gyros, strapdown, 0.5-2 nm/hr accuracy, 3-10 min alignment, longer life. IRS drawback: laser lock, cured by a dither motor."
+"a": "INS: conventional gyros, pendulous platform, less accurate, ~20 min alignment. IRS: ring laser gyros, strapdown, 0.5-2 nm/hr accuracy, 3-10 min alignment, longer life. IRS drawback: laser lock, cured by a dither motor.",
+"m": 1
 },
 {
 "q": "What is laser lock and how is it avoided?",
@@ -762,7 +799,8 @@
 },
 {
 "q": "What is SLOP and why do we need it?",
-"a": "Strategic Lateral Offset Procedure - offset the route centreline (normally to the right) so opposite-direction traffic doesn't line up. Needed because high nav accuracy puts aircraft exactly on centreline, making an altitude deviation far more likely to cause a collision."
+"a": "Strategic Lateral Offset Procedure - offset the route centreline (normally to the right) so opposite-direction traffic doesn't line up. Needed because high nav accuracy puts aircraft exactly on centreline, making an altitude deviation far more likely to cause a collision.",
+"m": 1
 }
 ]
 },
@@ -786,7 +824,8 @@
 },
 {
 "q": "What is Kalman filtering?",
-"a": "A process in the navigation computer that combines the short-term accuracy of the IRS with the long-term accuracy of an external reference to produce position and velocity."
+"a": "A process in the navigation computer that combines the short-term accuracy of the IRS with the long-term accuracy of an external reference to produce position and velocity.",
+"m": 1
 },
 {
 "q": "How does a triple-IRS/twin-FMC system work?",
@@ -992,12 +1031,14 @@
 "cards": [
 {
 "q": "What is RNP?",
-"a": "Numerical statement of navigation accuracy required in an airspace, based on 95% containment. E.g. RNP4 = within 4 NM of plotted position for 95% of the time. Set by the State."
+"a": "Numerical statement of navigation accuracy required in an airspace, based on 95% containment. E.g. RNP4 = within 4 NM of plotted position for 95% of the time. Set by the State.",
+"m": 1
 },
 {
 "q": "RNAV vs RNP?",
 "a": "Both need accuracy 95% of the time, but RNP adds on-board performance monitoring and alerting (e.g. RAIM). RNP = RNAV + monitoring/alerting.",
-"tip": "RNP = RNAV with a Nanny (monitor + alert)."
+"tip": "RNP = RNAV with a Nanny (monitor + alert).",
+"m": 1
 },
 {
 "q": "Which RNP values exist? Does RNP5 exist?",
@@ -1069,11 +1110,13 @@
 "cards": [
 {
 "q": "What is RVSM?",
-"a": "Reduced Vertical Separation Minimum - between FL290 and FL410 inclusive, aircraft separated by 1000 ft (300 m). In India from 27 Nov 2003."
+"a": "Reduced Vertical Separation Minimum - between FL290 and FL410 inclusive, aircraft separated by 1000 ft (300 m). In India from 27 Nov 2003.",
+"m": 1
 },
 {
 "q": "What equipment is needed for RVSM?",
-"a": "Two independent altitude measurement systems (cross-coupled static source with ice protection, digital encoding), one Mode C transponder, ACAS II, altitude deviation alerting, automatic altitude control."
+"a": "Two independent altitude measurement systems (cross-coupled static source with ice protection, digital encoding), one Mode C transponder, ACAS II, altitude deviation alerting, automatic altitude control.",
+"m": 1
 },
 {
 "q": "RVSM height keeping and level change tolerance?",
@@ -1110,7 +1153,8 @@
 "cards": [
 {
 "q": "MEL vs MMEL?",
-"a": "MMEL covers an aircraft type family; MEL is tailored to the operator's aircraft and environment (routes, airports, spares, maintenance). MMEL cannot be approved as a MEL. MEL doesn't cover essential airworthiness items (engines, landing gear, flaps, wings, flight controls)."
+"a": "MMEL covers an aircraft type family; MEL is tailored to the operator's aircraft and environment (routes, airports, spares, maintenance). MMEL cannot be approved as a MEL. MEL doesn't cover essential airworthiness items (engines, landing gear, flaps, wings, flight controls).",
+"m": 1
 },
 {
 "q": "MEL categories A, B, C, D?",
@@ -1163,7 +1207,8 @@
 },
 {
 "q": "Explain the 1 in 60 rule.",
-"a": "One degree of angular error equals one nautical mile at a distance of 60 NM from origin."
+"a": "One degree of angular error equals one nautical mile at a distance of 60 NM from origin.",
+"m": 1
 },
 {
 "q": "Rate of descent for a 3 degree glideslope?",
@@ -1220,11 +1265,13 @@
 },
 {
 "q": "Describe Mercator, its uses and limits.",
-"a": "Cylinder touching at equator, light at centre. Straight line = rhumb line; meridians parallel and equally spaced. Used up to 75 deg lat and equatorial areas. Limits: GCs aren't straight and scale isn't constant."
+"a": "Cylinder touching at equator, light at centre. Straight line = rhumb line; meridians parallel and equally spaced. Used up to 75 deg lat and equatorial areas. Limits: GCs aren't straight and scale isn't constant.",
+"m": 1
 },
 {
 "q": "Why Lambert's conformal conic?",
-"a": "Great circles are practically straight, radio bearings plot without conversion angle, and scale is nearly constant so you can measure with a ruler."
+"a": "Great circles are practically straight, radio bearings plot without conversion angle, and scale is nearly constant so you can measure with a ruler.",
+"m": 1
 },
 {
 "q": "Polar Stereographic - what's special?",
@@ -1252,11 +1299,13 @@
 "cards": [
 {
 "q": "What is the Critical Point?",
-"a": "The point between two airfields from which flight time to either is equal. Independent of endurance; midpoint in still air; moves into wind; moves back to the midpoint if wind reduces; more TAS acts like less wind."
+"a": "The point between two airfields from which flight time to either is equal. Independent of endurance; midpoint in still air; moves into wind; moves back to the midpoint if wind reduces; more TAS acts like less wind.",
+"m": 1
 },
 {
 "q": "What is PNR/PSR?",
-"a": "Furthest point on the route from which you can return to the departure airfield (or departure alternate) within safe endurance."
+"a": "Furthest point on the route from which you can return to the departure airfield (or departure alternate) within safe endurance.",
+"m": 1
 },
 {
 "q": "How do wind and TAS affect PNR distance?",
@@ -1511,12 +1560,14 @@
 "cards": [
 {
 "q": "What is V1?",
-"a": "Decision speed: max speed at which the first stopping action must be taken to stop within the ASDA (VSTOP), and the min speed after engine failure from which take-off can be continued within TODA (VGO). Failure before V1 abort; after V1 continue."
+"a": "Decision speed: max speed at which the first stopping action must be taken to stop within the ASDA (VSTOP), and the min speed after engine failure from which take-off can be continued within TODA (VGO). Failure before V1 abort; after V1 continue.",
+"m": 1
 },
 {
 "q": "What limits V1?",
 "a": "Not less than VEF + gain until reaction, not less than VMCG, not more than VR, not more than VMBE.",
-"tip": "V1 lives in a sandwich: VMCG below, VMBE (and VR) above."
+"tip": "V1 lives in a sandwich: VMCG below, VMBE (and VR) above.",
+"m": 1
 },
 {
 "q": "What affects V1?",
@@ -1532,7 +1583,8 @@
 },
 {
 "q": "What is V2 and how long do you fly it after engine failure?",
-"a": "Take-off safety speed with one engine inoperative, reached by the screen height; above stall and VMC; fly V2 until 400 ft."
+"a": "Take-off safety speed with one engine inoperative, reached by the screen height; above stall and VMC; fly V2 until 400 ft.",
+"m": 1
 },
 {
 "q": "VMU vs VLOF?",
@@ -1569,7 +1621,8 @@
 {
 "q": "Explain the four take-off climb segments.",
 "a": "Seg 1: 35 ft at V2 until gear up. Seg 2: gear up to 400 ft at V2, min gradient 2.4% (twin jet). Seg 3: level acceleration and flap retraction to final take-off speed. Seg 4: max continuous thrust to 1500 ft, gradient not less than 1.2%.",
-"tip": "1-Gear, 2-400ft, 3-Flaps, 4-1500ft. Gradients: 0 (positive), 2.4, (accel), 1.2."
+"tip": "1-Gear, 2-400ft, 3-Flaps, 4-1500ft. Gradients: 0 (positive), 2.4, (accel), 1.2.",
+"m": 1
 },
 {
 "q": "Bank limits on take-off flight path?",
@@ -1623,7 +1676,8 @@
 "cards": [
 {
 "q": "What are the components of ILS and their bands?",
-"a": "Localiser (VHF, 108-111.975 MHz, ~300 m beyond upwind end), glide path (UHF, 329.15-335 MHz, ~300 m in from threshold and 200 m offset), markers (75 MHz)."
+"a": "Localiser (VHF, 108-111.975 MHz, ~300 m beyond upwind end), glide path (UHF, 329.15-335 MHz, ~300 m in from threshold and 200 m offset), markers (75 MHz).",
+"m": 1
 },
 {
 "q": "How do you know a localiser frequency?",
@@ -1738,7 +1792,8 @@
 {
 "q": "Special SSR codes?",
 "n": 1,
-"a": "7700 emergency; 7600 radio failure; 7500 unlawful interference; 2000 no ATC instructions received."
+"a": "7700 emergency; 7600 radio failure; 7500 unlawful interference; 2000 no ATC instructions received.",
+"m": 1
 },
 {
 "q": "How many SSR codes in Mode A and Mode S?",
@@ -1799,7 +1854,8 @@
 },
 {
 "q": "What is RAIM and how many satellites?",
-"a": "Receiver Autonomous Integrity Monitoring - checks GPS integrity; needs at least five visible satellites for fault detection."
+"a": "Receiver Autonomous Integrity Monitoring - checks GPS integrity; needs at least five visible satellites for fault detection.",
+"m": 1
 },
 {
 "q": "ABAS vs GBAS vs SBAS?",
@@ -1831,7 +1887,8 @@
 "cards": [
 {
 "q": "Fail-passive vs fail-operational?",
-"a": "Fail-passive: single failure leaves aircraft safe with no big deviation but can't complete autoland (two autopilots). Fail-operational: remaining system completes approach, flare and landing after failure below alert height (three autopilots)."
+"a": "Fail-passive: single failure leaves aircraft safe with no big deviation but can't complete autoland (two autopilots). Fail-operational: remaining system completes approach, flare and landing after failure below alert height (three autopilots).",
+"m": 1
 },
 {
 "q": "What does autoland require?",
@@ -1844,6 +1901,754 @@
 {
 "q": "Why use lower HF frequencies at night?",
 "a": "At night electron density decreases; signals go higher and refract less; a daytime frequency would give a longer skip distance and leave the receiver in dead space."
+}
+]
+}
+],
+"chains": [
+{
+"title": "ACARS - the full story",
+"topic": "1. ACARS",
+"steps": [
+{
+"q": "Tell me about ACARS.",
+"a": "Aircraft Communications Addressing and Reporting System - digital data link for short messages between aircraft and ground over VHF, HF or SATCOM; also used for flight tracking."
+},
+{
+"q": "What does it actually do for the operator?",
+"a": "Auto-reports flight phase changes, interfaces with the FMS (flight plan/weather uplink), and sends real-time system and maintenance fault data."
+},
+{
+"q": "Say ACARS is unserviceable before departure - what now?",
+"a": "Operator must ensure real-time tracking using ADS-B. ACARS/ADS-B must be functional before every departure, and crew must never switch it off in flight."
+},
+{
+"q": "What if you fly where neither has coverage?",
+"a": "Operator devises a tracking procedure; crew report coordinates, speed and altitude at intervals not exceeding 15 minutes."
+}
+]
+},
+{
+"title": "Your approach, your weather",
+"topic": "2. All Weather Operations (AWO)",
+"steps": [
+{
+"q": "You are on an ILS approach and the RVR drops below minima. What do you do?",
+"a": "Depends where you are. Not commenced: don't commence if RVR/vis is below minimum. After commencing: don't continue below 1000 ft AAL or into the final approach segment if it falls below minimum."
+},
+{
+"q": "But what if you are already past that point?",
+"a": "If already in the final approach segment or below 1000 ft AAL, you may continue to DA/H or MDA/H."
+},
+{
+"q": "At DA - what decides if you land?",
+"a": "Required visual reference established at DA/H (or MDA/H) and maintained. Otherwise go around."
+},
+{
+"q": "Which RVR reading do you trust if the three differ?",
+"a": "Touchdown zone RVR is always controlling; mid-point and stop-end are also controlling if reported and relevant."
+}
+]
+},
+{
+"title": "Cat I to Cat III",
+"topic": "2. All Weather Operations (AWO)",
+"steps": [
+{
+"q": "Define Cat I, II and III.",
+"a": "Cat I: DH not lower than 200 ft, vis >= 800 m or RVR >= 550 m. Cat II: DH < 200 ft but >= 100 ft, RVR >= 300 m. IIIA: DH < 100 ft or none, RVR >= 175 m. IIIB: DH < 50 ft or none, RVR 50-175 m. IIIC: no DH, no RVR limit."
+},
+{
+"q": "What must be in place for Cat II/III?",
+"a": "Aircraft certified and equipped; DGCA approval; system recording auto-land success/failure; two pilots minimum; DH from radio altimeter; approved aerodrome."
+},
+{
+"q": "What is alert height?",
+"a": "Height above runway threshold above which a Cat III approach is discontinued with a go-around if a redundant part of the landing system or ground equipment fails."
+},
+{
+"q": "And what makes an autoland system fail-operational?",
+"a": "Approach, flare and landing can still be completed by the remaining automatic system after a failure (three autopilots)."
+}
+]
+},
+{
+"title": "Low visibility take-off",
+"topic": "2. All Weather Operations (AWO)",
+"steps": [
+{
+"q": "What is a low visibility take-off?",
+"a": "A take-off with RVR less than 400 m."
+},
+{
+"q": "What are the limits for scheduled operators?",
+"a": "Down to 125 m with DGCA approval, needing a 90 m visual segment from the cockpit at the start of the take-off run."
+},
+{
+"q": "And non-scheduled/GA?",
+"a": "Not below 500 m RVR."
+},
+{
+"q": "Can you convert met visibility to RVR for take-off?",
+"a": "No - conversion is not allowed for take-off, for any RVR minimum below 800 m, for visual/circling approaches, or when reported RVR is available."
+}
+]
+},
+{
+"title": "Restricted minima",
+"topic": "2. All Weather Operations (AWO)",
+"steps": [
+{
+"q": "What is Restricted AOM?",
+"a": "Normal DA/MDA +100 ft and visibility/RVR +400 m."
+},
+{
+"q": "Who has to use it?",
+"a": "Non-scheduled/GA operators not authorised normal AOM, and PICs until 100 hours command experience on type."
+},
+{
+"q": "What does a non-scheduled operator need for normal AOM?",
+"a": "PIC and co-pilot each 200 hours on type, 10 hours on type in last 90 days, and training including simulator min Level C."
+}
+]
+},
+{
+"title": "Non-precision approaches done properly",
+"topic": "3. CANPA / CDFA",
+"steps": [
+{
+"q": "How must NPAs be flown in India?",
+"a": "Using CDFA unless DGCA approves otherwise for that approach/runway."
+},
+{
+"q": "What is CDFA?",
+"a": "Continuous descent from at or above the FAF to about 50 ft over the threshold, no level-off, consistent with stabilised approach."
+},
+{
+"q": "What's the target descent angle and the max?",
+"a": "Optimum VDA 3.0 deg; max 4.5 deg Cat A/B, 3.77 deg Cat C/D."
+},
+{
+"q": "What happens at MDA?",
+"a": "Only two options: continue below MDA with visual reference, or go around. A derived decision altitude (MDA + increment, min 50 ft) is used to start the missed approach so you don't dip below MDA."
+},
+{
+"q": "Why do operators like it?",
+"a": "Safer via stabilised approach, less workload, better SA, fuel saving, less noise, reduced CFIT."
+},
+{
+"q": "What if the operator does not use CDFA?",
+"a": "RVR penalty: +200 m Cat A/B, +400 m Cat C/D, capped at 5000 m."
+}
+]
+},
+{
+"title": "Airspace classes",
+"topic": "4. Airspaces",
+"steps": [
+{
+"q": "What is Class D?",
+"a": "IFR and VFR allowed, all get ATC. IFR separated from IFR and get traffic info on VFR; VFR get traffic info on all."
+},
+{
+"q": "How is Class E different?",
+"a": "ATC only to IFR (separated from IFR); traffic info to all as far as practical. Not used for control zones."
+},
+{
+"q": "Which classes does India use?",
+"a": "D, E, F, G. Delhi and Mumbai are Class D."
+},
+{
+"q": "Speed limit?",
+"a": "250 kt IAS for VFR in C and all traffic in D-G, below 10 000 ft."
+},
+{
+"q": "Can VFR fly without a radio?",
+"a": "In classes E, F, G."
+}
+]
+},
+{
+"title": "Radio failure in IMC",
+"topic": "5. Communication Failure",
+"steps": [
+{
+"q": "You lose comms in IMC. What first?",
+"a": "Try all other means to contact ATC, squawk 7600, and keep voice comms where CPDLC exists."
+},
+{
+"q": "What level and speed do you fly?",
+"a": "Last assigned speed and level (or minimum flight altitude if higher)."
+},
+{
+"q": "For how long?",
+"a": "Non-radar: 20 minutes after missing a compulsory report. Radar: 7 minutes after the latest of reaching last level, selecting 7600, or missing a compulsory report. Then follow filed flight plan."
+},
+{
+"q": "When do you descend and land?",
+"a": "Start descent at the fix at/near the last acknowledged EAT (else at ETA from flight plan); land if possible within 30 minutes of ETA."
+}
+]
+},
+{
+"title": "EDTO explained",
+"topic": "6. EDTO",
+"steps": [
+{
+"q": "What is EDTO?",
+"a": "Operation by an aeroplane with two or more turbine engines where diversion time to an en-route alternate exceeds the DGCA threshold time."
+},
+{
+"q": "What are the thresholds?",
+"a": "60 min - twins over 45 360 kg and all scheduled twins; 90 min - non-scheduled under 45 360 kg; 120 min - more than two engines."
+},
+{
+"q": "What fuel do you need?",
+"a": "EDTO critical fuel - the greatest of: decompression; decompression + engine failure; engine failure alone, at the most critical point."
+},
+{
+"q": "What experience for 120 and 180 min approval?",
+"a": "120: 12 consecutive months in-service with the airframe-engine combo. 180: 12 months holding 120 approval with high propulsion reliability."
+},
+{
+"q": "What airfield can be an en-route alternate?",
+"a": "Adequate (facilities available) and suitable on the day (weather, serviceability). Take-off and destination may be considered en-route alternates."
+}
+]
+},
+{
+"title": "Data link in oceanic",
+"topic": "7. FANS, CPDLC & Datalink",
+"steps": [
+{
+"q": "Why FANS?",
+"a": "Over oceans/poles there's no radar; procedural control over HF needs large separation. FANS (GNSS + satcom data link) gives a virtual radar environment."
+},
+{
+"q": "Boeing vs Airbus?",
+"a": "FANS-1 Boeing; FANS-A Airbus."
+},
+{
+"q": "What is CPDLC?",
+"a": "Controller-pilot data link: fixed-format messages through FMS/ATSU for all phases, including PDC, taxi, emergency messages."
+},
+{
+"q": "ACARS vs VDL2?",
+"a": "ACARS 2.4 kbps; VDL Mode 2 31.5 kbps (10x), uses Mode S address, part of ATN."
+}
+]
+},
+{
+"title": "TCAS from basics",
+"topic": "9. TCAS",
+"steps": [
+{
+"q": "What is TCAS?",
+"a": "Collision avoidance system independent of ATC."
+},
+{
+"q": "TCAS I vs II?",
+"a": "I: TAs only. II: TAs and vertical RAs."
+},
+{
+"q": "How does it work?",
+"a": "Secondary radar principle air-to-air on 1030/1090 MHz; two 3D bubbles; needs intruder transponder (min Mode A)."
+},
+{
+"q": "What are the timings?",
+"a": "TA 45-35 s (amber circle); RA 30-20 s (red square)."
+},
+{
+"q": "What do you do?",
+"a": "TA: visual search. RA: manoeuvre immediately, inform ATC when able of deviation."
+},
+{
+"q": "Windshear, GPWS and TCAS at the same time?",
+"a": "Windshear first, GPWS second, TCAS third (Stall before all - SWAGAT)."
+}
+]
+},
+{
+"title": "GPWS to EGPWS",
+"topic": "10. GPWS / EGPWS",
+"steps": [
+{
+"q": "What is GPWS?",
+"a": "Computer using config, height and ILS data to warn of terrain with six modes."
+},
+{
+"q": "Name the modes.",
+"a": "1 excessive descent rate; 2 excessive terrain closure; 3 height loss after take-off; 4 flaps/gear not set; 5 below glide slope; 6 below minima."
+},
+{
+"q": "How is EGPWS better?",
+"a": "Adds GPS and terrain database for look-ahead; 5A/5B, 6A/6B, mode 7 windshear."
+},
+{
+"q": "Any weakness?",
+"a": "Only as good as its database - must be current."
+}
+]
+},
+{
+"title": "Compass errors",
+"topic": "11. DRMC & Gyroscopes",
+"steps": [
+{
+"q": "What are the requirements of a DRMC?",
+"a": "Horizontal, sensitive, aperiodic."
+},
+{
+"q": "Where is turning error greatest?",
+"a": "Turning through north and south; zero through east and west."
+},
+{
+"q": "And acceleration error?",
+"a": "Zero on N/S; max on 090/270. Acceleration -> apparent turn toward nearer pole; deceleration -> toward the further pole."
+}
+]
+},
+{
+"title": "Gyroscope",
+"topic": "11. DRMC & Gyroscopes",
+"steps": [
+{
+"q": "What is a gyroscope?",
+"a": "A freely rotating rotor with rigidity and precession."
+},
+{
+"q": "Define both.",
+"a": "Rigidity: axis stays fixed in space. Precession: moves at 90 degrees to applied force."
+},
+{
+"q": "What affects them?",
+"a": "Rigidity proportional to I x omega; precession proportional to torque, inversely to I x omega."
+},
+{
+"q": "Drift vs topple?",
+"a": "Both are wander: horizontal = drift; vertical = topple."
+}
+]
+},
+{
+"title": "Inertial navigation",
+"topic": "12. INS & IRS",
+"steps": [
+{
+"q": "What is the principle of INS?",
+"a": "Self-contained; senses acceleration, integrates twice to velocity then distance."
+},
+{
+"q": "What's different in IRS?",
+"a": "Ring laser gyros, strapdown, 0.5-2 nm/hr, 3-10 min alignment vs ~20 min for INS."
+},
+{
+"q": "What's the laser gyro's disadvantage?",
+"a": "Laser lock at low rotation rates; dither motor vibrates to break it."
+},
+{
+"q": "What does IRS need as inputs?",
+"a": "Initial position, barometric altitude and TAS."
+}
+]
+},
+{
+"title": "RNAV and offsets",
+"topic": "13. RNAV & SLOP",
+"steps": [
+{
+"q": "What is RNAV?",
+"a": "Navigation to required accuracy without flying over ground aids."
+},
+{
+"q": "B-RNAV vs P-RNAV?",
+"a": "5 nm vs 1 nm, 95% of the time."
+},
+{
+"q": "How does the FMC fix position?",
+"a": "IRS + radio (twin DME) combined by Kalman filtering."
+},
+{
+"q": "What is SLOP and why?",
+"a": "Offset to the right of centreline so opposite traffic doesn't line up - needed because high accuracy raises collision risk from altitude errors."
+}
+]
+},
+{
+"title": "Polar flying",
+"topic": "16. Long Range & Polar Navigation",
+"steps": [
+{
+"q": "Why are polar regions hard?",
+"a": "Rapid convergency and magnetic variation changes, steep dip, unreliable compass, HF only, few alternates."
+},
+{
+"q": "How do you navigate?",
+"a": "Grid navigation with gyro heading, INS/IRS, GPS; magnetic element of compass disconnected."
+},
+{
+"q": "If two INS disagree?",
+"a": "Use malfunction codes and fix from radar/ADF/VOR; then ask nearby aircraft for spot winds/GS; last resort flight plan winds at DR."
+}
+]
+},
+{
+"title": "North Atlantic MNPS",
+"topic": "17. MNPS (North Atlantic)",
+"steps": [
+{
+"q": "What is MNPS?",
+"a": "Minimum Navigation Performance Specification airspace over the North Atlantic, 35N-70N."
+},
+{
+"q": "Which levels?",
+"a": "FL285-420 with RVSM FL290-410; Class A FL55-FL660 OCAs."
+},
+{
+"q": "What equipment?",
+"a": "Two LRNS (GNSS/INS/IRS), RVSM equipment, ACAS II above 5700 kg turbine."
+},
+{
+"q": "When do you get an oceanic clearance?",
+"a": "At least 40 min before entry from initial OACC."
+},
+{
+"q": "Radio failure?",
+"a": "Maintain last acknowledged oceanic clearance to the last specified route point, then per state procedures (rejoin filed route if cleared otherwise)."
+},
+{
+"q": "Deviating around a storm without a clearance?",
+"a": "Move off OTS, broadcast on frequency and 121.5, watch TCAS, lights on; <10 NM keep level; >10 NM change +/-300 ft at about 10 NM."
+},
+{
+"q": "If you cannot get any revised clearance?",
+"a": "Turn at least 45 deg, get 15 NM offset; above FL410 change 1000 ft, below FL410 500 ft; at FL410 climb 1000 or descend 500."
+}
+]
+},
+{
+"title": "RNP vs RNAV",
+"topic": "18. RNP & PBN",
+"steps": [
+{
+"q": "What is RNP?",
+"a": "Navigation accuracy statement with 95% containment; RNAV with on-board monitoring and alerting."
+},
+{
+"q": "Examples?",
+"a": "RNP4 = within 4 NM 95% of the time. RNP values: 1, 4, 10, 12.6, 20."
+},
+{
+"q": "NAT track spacing?",
+"a": "NAT is RNP20: 20+20+20 = 60 NM."
+},
+{
+"q": "RNAV values in the approach?",
+"a": "IAF RNAV5; IAF-FAF RNAV1; FAF-landing RNAV0.3; missed approach RNAV1."
+},
+{
+"q": "What do RNP10 and RNP4 need?",
+"a": "Two LRNS; R in Item 10; RNP4 uses GNSS and needs CPDLC+ADS-C for 30 NM separation."
+}
+]
+},
+{
+"title": "RVSM",
+"topic": "19. RVSM",
+"steps": [
+{
+"q": "What is RVSM?",
+"a": "1000 ft vertical separation between FL290 and FL410 inclusive; India since 27 Nov 2003."
+},
+{
+"q": "What equipment?",
+"a": "Two independent altitude systems, Mode C, ACAS II, altitude alerting, automatic altitude control."
+},
+{
+"q": "What tolerances?",
+"a": "Mean TVE 25 m (80 ft); level changes not overshoot/undershoot by more than 150 ft."
+},
+{
+"q": "What if you lose capability?",
+"a": "Notify ATC (equipment failure, turbulence greater than moderate) - say \"Unable RVSM due equipment/turbulence\" and follow contingency."
+}
+]
+},
+{
+"title": "Navigation basics",
+"topic": "21. Navigation General",
+"steps": [
+{
+"q": "What's a great circle vs a rhumb line?",
+"a": "GC shortest path; rhumb line cuts meridians at a constant angle and lies nearer the Equator than the GC."
+},
+{
+"q": "Why is GC track not constant?",
+"a": "Convergency."
+},
+{
+"q": "What is the 1 in 60 rule?",
+"a": "1 degree = 1 NM at 60 NM."
+},
+{
+"q": "How do you use it for a glideslope?",
+"a": "3 degrees = 300 ft/NM; ROD = 5 x groundspeed for 3 degrees."
+}
+]
+},
+{
+"title": "Charts",
+"topic": "22. Charts & Projections",
+"steps": [
+{
+"q": "Conditions for orthomorphism?",
+"a": "Meridians and parallels at right angles; scale same in all directions."
+},
+{
+"q": "Describe Mercator.",
+"a": "Cylinder at equator; straight line is a rhumb line; used to 75 deg lat."
+},
+{
+"q": "Why use Lambert?",
+"a": "GCs near straight, radio bearings plot without conversion angle, near-constant scale."
+},
+{
+"q": "What about polar stereographic?",
+"a": "Light at opposite pole; only true perspective projection; used for polar areas."
+}
+]
+},
+{
+"title": "Critical point and PNR",
+"topic": "23. Critical Point & PNR",
+"steps": [
+{
+"q": "What's the Critical Point?",
+"a": "Equidistant in time between two airfields."
+},
+{
+"q": "How does wind change it?",
+"a": "Moves into wind; still-air midpoint; more TAS acts like less wind."
+},
+{
+"q": "PNR?",
+"a": "Furthest point you can fly and return to departure within safe endurance."
+},
+{
+"q": "Effect of wind on PNR?",
+"a": "Larger wind component reduces distance to PNR; TAS up increases it."
+}
+]
+},
+{
+"title": "Fuel",
+"topic": "25. Flight Planning, Fuel & Holding",
+"steps": [
+{
+"q": "Fuel for a turbojet needing an alternate?",
+"a": "Destination + alternate + 30 min holding at 1500 ft AGL + 5% contingency."
+},
+{
+"q": "Isolated aerodrome?",
+"a": "Destination + 2 hours at normal consumption."
+},
+{
+"q": "Components of fuel?",
+"a": "Start & taxi, trip, contingency, alternate, final reserve (30 min jet / 45 piston), additional."
+},
+{
+"q": "Hold specifics?",
+"a": "Right-hand turns standard; 1 min inbound leg at or below 14 000 ft, 1.5 min above."
+}
+]
+},
+{
+"title": "Mass and balance",
+"topic": "27. Mass & Balance",
+"steps": [
+{
+"q": "How is CG calculated?",
+"a": "Total moment / total mass."
+},
+{
+"q": "Define DOM.",
+"a": "Aeroplane ready for operation excluding all fuel and traffic load: crew, catering, water, chemicals."
+},
+{
+"q": "Ramp mass?",
+"a": "DOM + usable fuel + traffic load; take-off mass = ramp - start/taxi fuel."
+},
+{
+"q": "Max traffic load?",
+"a": "MSTOM - DOM - take-off fuel."
+}
+]
+},
+{
+"title": "Runway distances",
+"topic": "28. Performance Definitions",
+"steps": [
+{
+"q": "Define TORA, TODA, ASDA.",
+"a": "TORA: take-off run; TODA = TORA + clearway (<=1.5 x TORA); ASDA = TORA + stopway."
+},
+{
+"q": "What's a balanced field?",
+"a": "TODA = ASDA."
+},
+{
+"q": "Clearway vs stopway?",
+"a": "Clearway: >=152 m wide, slope <=1.25%, obstacle-free for climb. Stopway: strength to support an abort."
+},
+{
+"q": "ACN vs PCN?",
+"a": "ACN <= PCN to operate; 10% excess generally OK on good pavement."
+}
+]
+},
+{
+"title": "V1 story",
+"topic": "29. V-Speeds & Take-off",
+"steps": [
+{
+"q": "What is V1?",
+"a": "Decision speed - max speed to start stopping within ASDA (VSTOP), min speed to continue after engine failure within TODA (VGO)."
+},
+{
+"q": "What are its limits?",
+"a": "Not less than VEF + reaction gain, not less than VMCG, not more than VR, not more than VMBE."
+},
+{
+"q": "What affects V1?",
+"a": "Mass up -> up; more flap -> down; density down -> up; tailwind/downslope -> down."
+},
+{
+"q": "Why VMCG uses rudder only?",
+"a": "Ailerons would bank the wing into the ground; no nosewheel steering; density up -> VMCG up."
+},
+{
+"q": "V2?",
+"a": "Take-off safety speed with one engine out by 35 ft; fly V2 until 400 ft."
+}
+]
+},
+{
+"title": "Take-off flight path",
+"topic": "30. Take-off Climb, Landing & Climb Performance",
+"steps": [
+{
+"q": "Explain the four segments.",
+"a": "1: 35 ft to gear up at V2. 2: gear up to 400 ft at V2 (2.4% min). 3: acceleration and flap retraction. 4: max continuous thrust to 1500 ft (1.2%)."
+},
+{
+"q": "Turn limits?",
+"a": "Not below half wingspan or 50 ft; 15 deg up to 400 ft; 25 deg above."
+},
+{
+"q": "Obstacle margin?",
+"a": "35 ft; 50 ft if turn over 15 deg."
+}
+]
+},
+{
+"title": "ILS in detail",
+"topic": "31. ILS",
+"steps": [
+{
+"q": "What are the components?",
+"a": "Localiser (VHF 108-111.975, odd first decimal), glidepath (UHF 329.15-335), markers (75 MHz)."
+},
+{
+"q": "How does the localiser work?",
+"a": "Two overlapping lobes, different modulation, DDM zero on centreline."
+},
+{
+"q": "What are false glideslopes?",
+"a": "Additional zero-DDM paths from reflections; first at about 6 deg for a 3 deg GP; above true path, harmless."
+},
+{
+"q": "Sensitivity?",
+"a": "LLZ 2.5 deg full scale (0.5 per dot); GP 0.7 deg full scale (0.14 per dot)."
+}
+]
+},
+{
+"title": "Radar and SSR",
+"topic": "33. Radar, SSR & Mode S",
+"steps": [
+{
+"q": "Primary vs secondary?",
+"a": "Primary: echo; secondary: transponder reply on another frequency."
+},
+{
+"q": "SSR frequencies and modes?",
+"a": "1030 up, 1090 down; Mode A identity, C altitude, S selective."
+},
+{
+"q": "Special codes?",
+"a": "7700 emergency, 7600 radio failure, 7500 hijack, 2000 no instructions."
+},
+{
+"q": "What's garbling and fruiting?",
+"a": "Garbling: overlapping replies within ~1.7 nm; fruiting: replies to another radar's interrogation."
+}
+]
+},
+{
+"title": "Weather radar",
+"topic": "33. Radar, SSR & Mode S",
+"steps": [
+{
+"q": "AWR frequency and colours?",
+"a": "About 9375 MHz; black <0.7, green 0.7-4, yellow 4-12, red >12 mm/hr, magenta turbulence."
+},
+{
+"q": "Cloud height?",
+"a": "Tilt until returns vanish, then 1 in 60."
+},
+{
+"q": "Mapping?",
+"a": "Cosecant beam to ~70 nm, pencil beyond."
+}
+]
+},
+{
+"title": "GNSS integrity",
+"topic": "34. GNSS / GPS & Augmentation",
+"steps": [
+{
+"q": "GPS segments?",
+"a": "Space, control, user; 24 SVs, 6 planes, ~20 180 km."
+},
+{
+"q": "What is RAIM?",
+"a": "Receiver Autonomous Integrity Monitoring; needs five satellites."
+},
+{
+"q": "Biggest error?",
+"a": "Ionospheric."
+},
+{
+"q": "Augmentation types?",
+"a": "ABAS (onboard), GBAS (local), SBAS (wide area: WAAS, EGNOS, GAGAN)."
+}
+]
+},
+{
+"title": "Autoland",
+"topic": "35. Autopilot, Autoland & Radio Altimeter",
+"steps": [
+{
+"q": "What does autoland need?",
+"a": "Two autopilots, two radio altimeters, Cat III ILS."
+},
+{
+"q": "Fail-passive vs fail-operational?",
+"a": "Passive: safe but can't complete auto landing (two). Operational: still completes (three)."
+},
+{
+"q": "Radio altimeter?",
+"a": "FMCW, 2500 ft to 0; errors: fixed (5 ft steps) and mushing."
 }
 ]
 }

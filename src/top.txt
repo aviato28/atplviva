@@ -1,0 +1,57 @@
+What is ACARS and
+Define DA/DH vs MDA/MDH
+Give the Cat I, II
+What is the Approach Ban policy
+Which RVR is controlling
+What is Restricted AOM
+What are the requirements for Cat II/III
+Low visibility take-off limits
+What is alert height
+ILS critical area vs sensitive area
+Define CDFA
+What are the advantages of CDFA
+What's the optimum VDA
+What is DDA
+At MDA in a CDFA
+Describe Class A to G
+Which airspace classes are used in India
+Difference between Class D and E in India
+ICAO maximum holding speeds
+At what level does IAS change to Mach
+Comm failure in VMC
+Comm failure in IMC
+What is EDTO?
+DGCA threshold times
+What is EDTO critical fuel
+Adequate vs suitable
+TCAS I vs TCAS II
+TA and RA timings
+What do you do on a TA?
+What is GPWS and what modes
+GPWS vs EGPWS
+Order of priority: windshear
+What is GAGAN?
+What is RVSM?
+What equipment is needed for RVSM
+RNAV vs RNP?
+What is RNP?
+INS vs IRS?
+What is the principle of INS
+What is SLOP and why
+Compass acceleration errors
+Three requirements of a DRMC
+What is V1?
+What limits V1?
+What is V2 and
+Explain the four take-off climb segments
+What are the components of ILS
+Special SSR codes
+What is the Critical Point?
+What is PNR/PSR?
+Explain the 1 in 60 rule
+Describe Mercator
+Why Lambert
+What is Kalman filtering?
+MEL vs MMEL?
+Fail-passive vs fail-operational?
+What is RAIM
